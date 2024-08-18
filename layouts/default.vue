@@ -1,10 +1,8 @@
 <template>
-  <div
-    style="font-family: 'Plus Jakarta Sans', sans-serif"
-    class="overflow-hidden"
-  >
+  <div class="overflow-clip">
     <LazyHeroBar />
     <NuxtPage class="py-24" />
+    <Separator />
     <LazyFooterBar />
   </div>
 </template>

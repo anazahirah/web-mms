@@ -11,7 +11,6 @@
     </div>
 
     <CardProduct :products="products" />
-    <LazyClientSection class="" />
     <CardCTA />
   </div>
 </template>

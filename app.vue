@@ -13,7 +13,7 @@ useSeoMeta({
   description:
     "PT Mechatronic Mitra Solusi adalah perusahaan pemasok mesin dan jasa yang bergerak di bidang Engineering khususnya di bidang Industrial Automation and Process control, Drives System, Human Machine Interface, dan Isolated Power System. Selain itu mampu menangani perbaikan dan modifikasi hingga penghematan energi.",
   url: "https://mechatronicgroup.com/",
-  image: "/LogoOG.png",
+  image: "/android-chrome-512x512.png",
   type: "website",
   keywords:
     "Electronic, Mechanical, Machine, Mesin, Industri, Otomasi , Automation , Ducting, Construction , Konstruksi , Pipe, Pipa , Pumbling, Tukang, Conveyor, Conveyor Belt ",

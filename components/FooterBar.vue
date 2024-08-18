@@ -74,7 +74,7 @@
     </div>
     <div
       style="font-family: 'Space Grotesk Variable', sans-serif"
-      class="sticky bottom-0 -z-[1] py-20 bg-[#ffd000] overflow-hidden w-full justify-center items-center flex text-[5vw] tracking-tighter font-extrabold"
+      class="sticky bottom-0 -z-[1] py-20 bg-[#ffd000] overflow-clip w-full justify-center items-center flex text-[5vw] tracking-tighter font-extrabold"
     >
       Mechatronic Mitra Solusi
     </div>

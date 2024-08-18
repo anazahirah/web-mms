@@ -4,6 +4,7 @@
     <Separator class="bg-black mt-24 mb-10" />
     <ServiceBenefit />
     <LazyProductsSection />
+    <LazyClientSection class="" />
   </div>
 </template>
 

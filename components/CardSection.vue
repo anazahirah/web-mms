@@ -18,8 +18,10 @@
 </template>
 
 <script setup lang="ts">
+import type { FunctionalComponent } from "vue";
+
 defineProps<{
-  icon: Object;
+  icon: FunctionalComponent;
   title: string;
   description: string;
   slogan: string;

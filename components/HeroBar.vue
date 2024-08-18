@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full min-h-screen overflow-hidden py-24 header">
+  <div class="w-full min-h-screen overflow-clip py-24 header">
     <div
-      class="w-[90%] h-full scale-150 image-container my-auto mx-auto overflow-hidden rounded-3xl relative"
+      class="w-[90%] h-full scale-150 image-container my-auto mx-auto overflow-clip rounded-3xl relative"
     >
       <NuxtImg
         class="object-cover w-full h-full absolute left-0 top-0 image"
