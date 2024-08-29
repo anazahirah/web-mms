@@ -70,7 +70,7 @@
                 <ul class="md:space-y-3 space-y-2">
                   <li class="relative">
                     <NuxtLink
-                      to="/businesses/aps-facility-care"
+                      to=""
                       class="group flex items-center transition-all text-zinc-400 hover:text-white xl:text-base md:text-sm text-xs font-medium"
                       target="_self"
                     >
@@ -82,7 +82,7 @@
                   </li>
                   <li class="relative">
                     <NuxtLink
-                      to="/businesses/aps-resources-services"
+                      to=""
                       class="group flex items-center transition-all text-zinc-400 hover:text-white xl:text-base md:text-sm text-xs font-medium"
                       target="_self"
                     >
@@ -94,7 +94,7 @@
                   </li>
                   <li class="relative">
                     <NuxtLink
-                      to="/businesses/retail-and-ancillary"
+                      to=""
                       class="group flex items-center transition-all text-zinc-400 hover:text-white xl:text-base md:text-sm text-xs font-medium"
                       target="_self"
                     >
@@ -106,7 +106,7 @@
                   </li>
                   <li class="relative">
                     <NuxtLink
-                      to="/businesses/passenger-services"
+                      to=""
                       class="group flex items-center transition-all text-zinc-400 hover:text-white xl:text-base md:text-sm text-xs font-medium"
                       target="_self"
                     >
