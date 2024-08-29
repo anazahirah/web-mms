@@ -31,7 +31,7 @@
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink
-            href="/about-us"
+            href="/about"
             :class="navigationMenuTriggerStyle()"
           >
             About Us
@@ -39,10 +39,7 @@
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuLink
-            href="/partners"
-            :class="navigationMenuTriggerStyle()"
-          >
+          <NavigationMenuLink :class="navigationMenuTriggerStyle()">
             Our Partners
           </NavigationMenuLink>
         </NavigationMenuItem>
