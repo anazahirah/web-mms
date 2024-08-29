@@ -1,7 +1,7 @@
 <template>
   <div
     id="product"
-    class="w-[90%] mx-auto rounded-md flex bg-neutral-800 border-[1px] border-neutral-700"
+    class="w-[90%] mx-auto rounded-md flex bg-[#2b4e87]/30 border border-[#FAD003]"
   >
     <div class="w-1/2 h-full overflow-hidden">
       <img

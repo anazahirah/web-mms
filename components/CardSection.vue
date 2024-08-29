@@ -9,10 +9,10 @@
     </p>
     <div class="flex flex-col w-full mt-auto gap-2">
       <div class="flex justify-between">
-        <span class="text-slate-300"> {{ number }}</span>
-        <span class="text-slate-300">{{ slogan }}</span>
+        <span class="text-[#184A8A]"> {{ number }}</span>
+        <span class="text-[#184A8A]">{{ slogan }}</span>
       </div>
-      <div class="w-full h-[1px] bg-slate-300"></div>
+      <div class="w-full h-[1px] bg-[#FAD004]"></div>
     </div>
   </div>
 </template>

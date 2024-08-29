@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-64 pb-12">
+  <div class="pt-64 pb-12 flex flex-col gap-16">
     <div
       class="flex flex-col gap-3 items-center justify-center w-[90%] mx-auto"
     >
@@ -15,28 +15,62 @@
       </p>
     </div>
 
-    <div class="flex flex-col gap-8 mx-auto">
-      <NuxtMarquee class="flex gap-4 items-center">
-        <img
-          v-for="logo in clientLogo"
-          :key="logo.alt"
-          class="size-64 mx-4 object-contain"
-          :src="logo.url"
-          :alt="logo.alt"
-          format="webp"
-        />
-      </NuxtMarquee>
+    <div class="grid grid-cols-4 gap-8 mx-auto w-[90%]">
+      <CardClient
+        v-for="logo in clientLogo"
+        :key="logo.alt"
+        :image="logo.image"
+        :alt="logo.alt"
+        :url="logo.url"
+        :description="logo.description"
+      />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 const clientLogo = [
-  { url: "/lg.png", alt: "Logo LG" },
-  { url: "/mayora.png", alt: "Logo Mayora" },
-  { url: "/loreal.svg", alt: "Logo Loreal" },
-  { url: "/cabot.png", alt: "Logo Cabot" },
-  { url: "/nestle.png", alt: "Logo Nestle" },
-  { url: "/yamaha.png", alt: "Logo Yamaha" },
+  {
+    image: "/lg.png",
+    alt: "Logo LG",
+    url: "/",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat!",
+  },
+  {
+    image: "/mayora.png",
+    alt: "Logo Mayora",
+    url: "/",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat!",
+  },
+  {
+    image: "/loreal.svg",
+    alt: "Logo Loreal",
+    url: "/",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat!",
+  },
+  {
+    image: "/cabot.png",
+    alt: "Logo Cabot",
+    url: "/",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat!",
+  },
+  {
+    image: "/nestle.png",
+    alt: "Logo Nestle",
+    url: "/",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat!",
+  },
+  {
+    image: "/yamaha.png",
+    alt: "Logo Yamaha",
+    url: "/",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat!",
+  },
 ];
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#212122] w-full py-24 mt-32 flex flex-col gap-32">
+  <div class="bg-[#012B6F] w-full py-24 mt-32 flex flex-col gap-32">
     <div class="flex flex-col gap-4 w-[90%] mx-auto">
       <h2 class="text-5xl font-semibold text-white">
         Every Machine Your Business Needs
@@ -11,7 +11,6 @@
     </div>
 
     <CardProduct :products="products" />
-    <CardCTA />
   </div>
 </template>
 

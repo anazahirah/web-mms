@@ -1,5 +1,33 @@
 <template>
-  <div class="flex flex-col gap-32 w-full px-24">
+  <div class="bg-[#FAD003] w-full h-full relative overflow-hidden py-32">
+    <div class="grid grid-cols-2 w-[90%] mx-auto gap-12">
+      <div class="flex flex-col gap-8 col-span-1">
+        <h2 class="font-semibold text-[clamp(1.5rem,3vw+1rem,3rem)]">
+          Kenapa Mechatronic Mitra Solusi?
+        </h2>
+
+        <p class="text-[clamp(1rem,2vw+1rem,1.5rem)] tracking-wider">
+          PT Mechatronic Mitra Solusi menghadirkan
+          <span class="font-bold underline text-black"> solusi terbaik </span>
+          untuk otomasi industri. Kami berkomitmen memenuhi kebutuhan spesifik
+          Anda dengan layanan yang andal dan efisien
+        </p>
+        <Button class="w-fit group"
+          >Read More About Us
+          <IconCaretRight
+            class="size-5 ml-0 group-hover:ml-2 duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+        /></Button>
+      </div>
+      <div class="absolute top-0 right-0 w-1/3 col-span-1">
+        <img
+          src="/question-mark.png"
+          alt="question mark 3D "
+          class="object-contain object-center w-full"
+        />
+      </div>
+    </div>
+  </div>
+  <!-- <div class="flex flex-col gap-32 w-full px-24">
     <div class="w-full flex gap-16">
       <div
         class="sticky top-0 self-start tracking-tight pt-4 w-1/3 text-4xl font-bold text-primary"
@@ -69,7 +97,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script setup lang="ts">
@@ -84,6 +112,7 @@ import {
   LucideHardHat,
   LucideBrainCog,
   LucideRefrigerator,
+  LucideArrowRight,
 } from "lucide-vue-next";
 import SteelPipe from "@/icons/PipeSteel.vue";
 const keunggulan = [
@@ -126,57 +155,6 @@ const keunggulan = [
       "Kami menyediakan 12 lebih service yang dapat meningkatkan experince anda",
     slogan: "Many Choices",
     number: "05",
-  },
-];
-
-const service = [
-  {
-    icon: LucideWrench,
-    title: "Engineering Service",
-    description:
-      "Solusi lengkap untuk kebutuhan teknik mesin, listrik, pemeliharaan sistem, konsultasi, dan desain segel mekanis.",
-    slogan: "Fast",
-    number: "01",
-  },
-  {
-    icon: SteelPipe,
-    title: "Steel Works and Pipe Works",
-    description:
-      "Layanan fabrikasi dan pemasangan baja serta instalasi sistem perpipaan",
-    slogan: "Steel and Pipe",
-    number: "02",
-  },
-  {
-    icon: LucideRefrigerator,
-    title: "Plumbing and Refrigeration",
-    description:
-      "Instalasi, perbaikan, dan pemeliharaan sistem pipa air bersih/kotor serta sistem pendingin ruangan/industri.",
-    slogan: " Pipe Protection",
-    number: "03",
-  },
-  {
-    icon: LucideHardHat,
-    title: "Contractor and Supplier",
-    description:
-      "Penyedia jasa konstruksi dan pengadaan material/peralatan untuk berbagai proyek.",
-    slogan: "Construction",
-    number: "04",
-  },
-  {
-    icon: LucideHeater,
-    title: "Chiller and Heater",
-    description:
-      "Penjualan dan pemasangan unit pendingin (chiller) dan pemanas (heater) untuk kebutuhan industri dan komersial.",
-    slogan: "Comfort Number One",
-    number: "05",
-  },
-  {
-    icon: LucideBrainCog,
-    title: "Machine Maker",
-    description:
-      "Desain dan fabrikasi mesin sesuai kebutuhan spesifik industri.",
-    slogan: "Your Needs",
-    number: "06",
   },
 ];
 </script>

@@ -1,82 +1,200 @@
 <template>
-  <footer class="w-full">
-    <div class="relative bg-white">
+  <footer class="w-full overflow-hidden">
+    <div class="relative h-auto w-full bg-[#021024]">
       <div
-        class="w-full relative py-24 max-lg:gap-10 grid grid-cols-2 z-10 px-24"
-      >
-        <div
-          class="col-span-2 lg:col-span-1 flex flex-col justify-between items-start"
-        >
-          <div class="font-bold text-[clamp(1.5rem,3vw+1rem,2.25rem)]">
-            Get to know us!
+        class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"
+      ></div>
+      <div
+        class="absolute left-0 right-0 top-[-10%] h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle_400px_at_50%_300px,#fbfbfb36,#021024)]"
+      ></div>
+
+      <div class="container relative z-30 py-8 md:py-12">
+        <div class="w-full flex items-center justify-between gap-24">
+          <div class="w-full flex item-start flex-col justify-start">
+            <img
+              src="/mechatronic.png"
+              class="xl:w-[207px] xl:h-[88px] w-auto h-[88px] mb-5 object-contain"
+              alt="logo-footer"
+            />
+            <div
+              class="text-zinc-400 xl:text-base text-sm font-medium max-w-sm"
+            >
+              <p>
+                PT Mechatronic Mitra Solusi menghadirkan solusi terbaik untuk
+                otomasi industri. Kami berkomitmen memenuhi kebutuhan spesifik
+                Anda dengan layanan yang andal dan efisien
+              </p>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="grid grid-cols-2 2xl:gap-12 md:gap-6 gap-3">
+              <div class="">
+                <div
+                  class="md:mb-5 mb-2 md:text-white text-[#F6BB00] xl:text-xl text-base font-semibold"
+                >
+                  About Us
+                </div>
+                <ul class="md:space-y-3 space-y-2">
+                  <li class="relative">
+                    <NuxtLink
+                      to="/about/mechatronic-vision?component=VisiComp"
+                      class="group flex items-center transition-all text-zinc-400 hover:text-white xl:text-base md:text-sm text-xs font-medium"
+                      target="_self"
+                    >
+                      Visi Mechatronic
+                      <div
+                        class="absolute left-0 bottom-0 w-0 -mb-1 group-hover:w-[42px] xl:h-[5px] h-[3px] transition-all bg-[#F6BB00] rounded-[10px]"
+                      ></div>
+                    </NuxtLink>
+                  </li>
+                  <li class="relative">
+                    <NuxtLink
+                      to="/about/mechatronic-mission?component=MisiComp"
+                      class="group flex items-center transition-all text-zinc-400 hover:text-white xl:text-base md:text-sm text-xs font-medium"
+                      target="_self"
+                    >
+                      Misi Mechatronic
+                      <div
+                        class="absolute left-0 bottom-0 w-0 -mb-1 group-hover:w-[42px] xl:h-[5px] h-[3px] transition-all bg-[#F6BB00] rounded-[10px]"
+                      ></div>
+                    </NuxtLink>
+                  </li>
+                </ul>
+              </div>
+              <div class="">
+                <div
+                  class="md:mb-5 mb-2 md:text-white text-[#F6BB00] xl:text-xl text-base font-semibold"
+                >
+                  Our Business
+                </div>
+                <ul class="md:space-y-3 space-y-2">
+                  <li class="relative">
+                    <NuxtLink
+                      to="/businesses/aps-facility-care"
+                      class="group flex items-center transition-all text-zinc-400 hover:text-white xl:text-base md:text-sm text-xs font-medium"
+                      target="_self"
+                    >
+                      Mekanikal
+                      <div
+                        class="absolute left-0 bottom-0 w-0 -mb-1 group-hover:w-[42px] xl:h-[5px] h-[3px] transition-all bg-[#F6BB00] rounded-[10px]"
+                      ></div>
+                    </NuxtLink>
+                  </li>
+                  <li class="relative">
+                    <NuxtLink
+                      to="/businesses/aps-resources-services"
+                      class="group flex items-center transition-all text-zinc-400 hover:text-white xl:text-base md:text-sm text-xs font-medium"
+                      target="_self"
+                    >
+                      Electrical
+                      <div
+                        class="absolute left-0 bottom-0 w-0 -mb-1 group-hover:w-[42px] xl:h-[5px] h-[3px] transition-all bg-[#F6BB00] rounded-[10px]"
+                      ></div>
+                    </NuxtLink>
+                  </li>
+                  <li class="relative">
+                    <NuxtLink
+                      to="/businesses/retail-and-ancillary"
+                      class="group flex items-center transition-all text-zinc-400 hover:text-white xl:text-base md:text-sm text-xs font-medium"
+                      target="_self"
+                    >
+                      Konsultan
+                      <div
+                        class="absolute left-0 bottom-0 w-0 -mb-1 group-hover:w-[42px] xl:h-[5px] h-[3px] transition-all bg-[#F6BB00] rounded-[10px]"
+                      ></div>
+                    </NuxtLink>
+                  </li>
+                  <li class="relative">
+                    <NuxtLink
+                      to="/businesses/passenger-services"
+                      class="group flex items-center transition-all text-zinc-400 hover:text-white xl:text-base md:text-sm text-xs font-medium"
+                      target="_self"
+                    >
+                      Informatika
+                      <div
+                        class="absolute left-0 bottom-0 w-0 -mb-1 group-hover:w-[42px] xl:h-[5px] h-[3px] transition-all bg-[#F6BB00] rounded-[10px]"
+                      ></div>
+                    </NuxtLink>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-        <div
-          class="col-span-2 lg:col-span-1 flex max-lg:flex-col gap-10 lg:gap-[15%] items-start"
-        >
-          <div class="flex flex-col gap-6 w-1/2">
-            <div class="flex flex-col gap-2.5">
-              <div class="font-bold text-[clamp(0.941rem,2vw+1rem,1.412rem)]">
-                Our Business
-              </div>
-              <ul class="font-normal flex flex-col gap-1.5">
-                <li>
-                  <a href="#product" class="">Mechanical </a>
-                </li>
-                <li>
-                  <a href="#product" class="">Electrical</a>
-                </li>
-                <li>
-                  <a href="#product" class="">Special Purpose Machine</a>
-                </li>
-                <li>
-                  <a href="#product" class="">Ducting</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="flex flex-col gap-2.5">
-              <div class="font-bold text-[clamp(0.941rem,2vw+1rem,1.412rem)]">
-                Careers
-              </div>
-
-              <a class="underline" href="mailto:test@test.com">
-                Email us here!
-              </a>
-            </div>
+        <div class="xl:hidden">
+          <div class="text-white text-center text-base font-medium mb-3">
+            Connect Us
           </div>
-
-          <div class="flex flex-col gap-2.5">
-            <div class="font-bold text-[clamp(0.941rem,2vw+1rem,1.412rem)]">
-              Contact
-            </div>
-            <ul class="flex flex-col gap-2 font-normal">
-              <li class="">
-                Jl. Raya Pasar Kemis KM 3.5 Pos Warehousing Complex 88 Block
-                R12C, Gelam Jaya Tangerang
-              </li>
-              <li>
-                <a href="tel:+62888888888">(+62) 888 888 888</a>
-              </li>
-              <li class="underline">
-                <a
-                  target="_blank"
-                  class="flex gap-2 flex-row items-center"
-                  href="https://www.google.co.id/maps/search/Jl.+Raya+Pasar+Kemis+KM+3.5/@-6.1731726,106.5618499,18z/data=!3m1!4b1?entry=ttu"
-                >
-                  <span> See on Map</span> <IconSewingPin />
-                </a>
-              </li>
-            </ul>
+          <div class="text-center space-x-3">
+            <NuxtLink
+              to="http://www.angkasapura2.co.id/"
+              target="_blank"
+              class="inline-flex justify-center items-center w-8 h-8 bg-[#012B6A] text-white rounded-full"
+            >
+              <i class="fa-regular fa-globe fa-fw relative"></i>
+            </NuxtLink>
+            <NuxtLink
+              to="https://web.facebook.com/apsolusi?_rdc=1&amp;_rdr"
+              target="_blank"
+              class="inline-flex justify-center items-center w-8 h-8 bg-[#012B6A] text-white rounded-full"
+            >
+              <i class="fa-brands fa-facebook relative"></i>
+            </NuxtLink>
+            <NuxtLink
+              to="https://www.instagram.com/angkasapurasolusi/"
+              target="_blank"
+              class="inline-flex justify-center items-center w-8 h-8 bg-[#012B6A] text-white rounded-full"
+            >
+              <i class="fa-brands fa-instagram relative"></i>
+            </NuxtLink>
+            <NuxtLink
+              to="https://www.youtube.com/@AngkasaPuraSolusi"
+              target="_blank"
+              class="inline-flex justify-center items-center w-8 h-8 bg-[#012B6A] text-white rounded-full"
+            >
+              <i class="fa-brands fa-youtube relative"></i>
+            </NuxtLink>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      style="font-family: 'Space Grotesk Variable', sans-serif"
-      class="sticky bottom-0 -z-[1] py-20 bg-[#ffd000] overflow-clip w-full justify-center items-center flex text-[5vw] tracking-tighter font-extrabold"
-    >
-      Mechatronic Mitra Solusi
+      <div
+        class="py-12 text-white text-center xl:text-base md:text-sm text-xs font-normal bg-[#00183A]/60 backdrop-blur-md"
+      >
+        <div class="container">
+          <div class="max-xl:hidden text-center space-x-3 mb-4">
+            <NuxtLink
+              to="http://www.angkasapura2.co.id/"
+              target="_blank"
+              class="inline-flex justify-center items-center w-9 h-9 bg-[#012B6A] hover:bg-[#F6BB00] hover:text-[#012B6A] transition-all duration-500 text-white rounded-full"
+            >
+              <i class="fa-regular fa-globe fa-fw relative"></i>
+            </NuxtLink>
+            <NuxtLink
+              href="https://web.facebook.com/apsolusi?_rdc=1&amp;_rdr"
+              target="_blank"
+              class="inline-flex justify-center items-center w-9 h-9 bg-[#012B6A] hover:bg-[#F6BB00] hover:text-[#012B6A] transition-all duration-500 text-white rounded-full"
+            >
+              <i class="fa-brands fa-facebook relative"></i>
+            </NuxtLink>
+            <NuxtLink
+              href="https://www.instagram.com/angkasapurasolusi/"
+              target="_blank"
+              class="inline-flex justify-center items-center w-9 h-9 bg-[#012B6A] hover:bg-[#F6BB00] hover:text-[#012B6A] transition-all duration-500 text-white rounded-full"
+            >
+              <i class="fa-brands fa-instagram relative"></i>
+            </NuxtLink>
+            <NuxtLink
+              href="https://www.youtube.com/@AngkasaPuraSolusi"
+              target="_blank"
+              class="inline-flex justify-center items-center w-9 h-9 bg-[#012B6A] hover:bg-[#F6BB00] hover:text-[#012B6A] transition-all duration-500 text-white rounded-full"
+            >
+              <i class="fa-brands fa-youtube relative"></i>
+            </NuxtLink>
+          </div>
+
+          © Angkasa Pura Solusi 2024
+        </div>
+      </div>
     </div>
   </footer>
 </template>
