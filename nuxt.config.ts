@@ -46,8 +46,8 @@ export default defineNuxtConfig({
     "@hypernym/nuxt-gsap",
     "@nuxt/image",
     "nuxt-lucide-icons",
-
-    "nuxt-marquee",
+    "@vueuse/nuxt",
+    "@nuxt/content",
   ],
   lucide: {
     namePrefix: "Icon",

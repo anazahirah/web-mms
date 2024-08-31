@@ -1,8 +1,11 @@
 <template>
   <div
-    class="fixed navbar-animate top-0 left-0 right-0 max-w-[95%] mx-auto mt-4 rounded-3xl bg-[#FAD004] px-8 overflow-hidden z-10 flex justify-between items-center"
+    class="fixed navbar-animate top-0 left-0 right-0 max-w-[95%] mx-auto mt-4 rounded-3xl bg-[#FAD004] px-8 overflow-hidden z-50 flex justify-between items-center"
   >
-    <span class="menu-animate">Mechatronic Mitra Solusi</span>
+    <span class="menu-animate flex items-center gap-2"
+      ><img src="/mechatronic.png" alt="logo mechatronic" class="size-10" />
+      Mechatronics Mitra Solusi</span
+    >
     <NavigationMenu class="menu-animate">
       <NavigationMenuList>
         <NavigationMenuItem>

@@ -70,7 +70,7 @@
                 <ul class="md:space-y-3 space-y-2">
                   <li class="relative">
                     <NuxtLink
-                      to=""
+                      to="/business/mekanikal"
                       class="group flex items-center transition-all text-zinc-400 hover:text-white xl:text-base md:text-sm text-xs font-medium"
                       target="_self"
                     >
@@ -82,7 +82,7 @@
                   </li>
                   <li class="relative">
                     <NuxtLink
-                      to=""
+                      to="/business/electrical"
                       class="group flex items-center transition-all text-zinc-400 hover:text-white xl:text-base md:text-sm text-xs font-medium"
                       target="_self"
                     >
@@ -94,7 +94,7 @@
                   </li>
                   <li class="relative">
                     <NuxtLink
-                      to=""
+                      to="/business/konsultan"
                       class="group flex items-center transition-all text-zinc-400 hover:text-white xl:text-base md:text-sm text-xs font-medium"
                       target="_self"
                     >
@@ -106,7 +106,7 @@
                   </li>
                   <li class="relative">
                     <NuxtLink
-                      to=""
+                      to="/business/informatika"
                       class="group flex items-center transition-all text-zinc-400 hover:text-white xl:text-base md:text-sm text-xs font-medium"
                       target="_self"
                     >
@@ -121,82 +121,74 @@
             </div>
           </div>
         </div>
-        <div class="xl:hidden">
-          <div class="text-white text-center text-base font-medium mb-3">
-            Connect Us
-          </div>
-          <div class="text-center space-x-3">
-            <NuxtLink
-              to="http://www.angkasapura2.co.id/"
-              target="_blank"
-              class="inline-flex justify-center items-center w-8 h-8 bg-[#012B6A] text-white rounded-full"
-            >
-              <i class="fa-regular fa-globe fa-fw relative"></i>
-            </NuxtLink>
-            <NuxtLink
-              to="https://web.facebook.com/apsolusi?_rdc=1&amp;_rdr"
-              target="_blank"
-              class="inline-flex justify-center items-center w-8 h-8 bg-[#012B6A] text-white rounded-full"
-            >
-              <i class="fa-brands fa-facebook relative"></i>
-            </NuxtLink>
-            <NuxtLink
-              to="https://www.instagram.com/angkasapurasolusi/"
-              target="_blank"
-              class="inline-flex justify-center items-center w-8 h-8 bg-[#012B6A] text-white rounded-full"
-            >
-              <i class="fa-brands fa-instagram relative"></i>
-            </NuxtLink>
-            <NuxtLink
-              to="https://www.youtube.com/@AngkasaPuraSolusi"
-              target="_blank"
-              class="inline-flex justify-center items-center w-8 h-8 bg-[#012B6A] text-white rounded-full"
-            >
-              <i class="fa-brands fa-youtube relative"></i>
-            </NuxtLink>
-          </div>
-        </div>
       </div>
       <div
-        class="py-12 text-white text-center xl:text-base md:text-sm text-xs font-normal bg-[#00183A]/60 backdrop-blur-md"
+        class="bg-[#051939] w-full z-40 relative pt-16 pb-4 flex flex-col gap-8"
       >
-        <div class="container">
-          <div class="max-xl:hidden text-center space-x-3 mb-4">
-            <NuxtLink
-              to="http://www.angkasapura2.co.id/"
-              target="_blank"
-              class="inline-flex justify-center items-center w-9 h-9 bg-[#012B6A] hover:bg-[#F6BB00] hover:text-[#012B6A] transition-all duration-500 text-white rounded-full"
-            >
-              <i class="fa-regular fa-globe fa-fw relative"></i>
-            </NuxtLink>
-            <NuxtLink
-              href="https://web.facebook.com/apsolusi?_rdc=1&amp;_rdr"
-              target="_blank"
-              class="inline-flex justify-center items-center w-9 h-9 bg-[#012B6A] hover:bg-[#F6BB00] hover:text-[#012B6A] transition-all duration-500 text-white rounded-full"
-            >
-              <i class="fa-brands fa-facebook relative"></i>
-            </NuxtLink>
-            <NuxtLink
-              href="https://www.instagram.com/angkasapurasolusi/"
-              target="_blank"
-              class="inline-flex justify-center items-center w-9 h-9 bg-[#012B6A] hover:bg-[#F6BB00] hover:text-[#012B6A] transition-all duration-500 text-white rounded-full"
-            >
-              <i class="fa-brands fa-instagram relative"></i>
-            </NuxtLink>
-            <NuxtLink
-              href="https://www.youtube.com/@AngkasaPuraSolusi"
-              target="_blank"
-              class="inline-flex justify-center items-center w-9 h-9 bg-[#012B6A] hover:bg-[#F6BB00] hover:text-[#012B6A] transition-all duration-500 text-white rounded-full"
-            >
-              <i class="fa-brands fa-youtube relative"></i>
-            </NuxtLink>
-          </div>
+        <div class="container flex items-center">
+          <div
+            class="flex flex-col gap-8 p-8 bg-[#003ADA] rounded-2xl text-white w-[30rem] h-[20rem] -mr-2 relative z-30"
+          >
+            <h5 class="text-[clamp(1.125rem,2vw+1rem,1.2rem)] font-semibold">
+              Temukan Kami Di
+            </h5>
+            <div class="flex gap-3 items-center h-full">
+              <NuxtLink
+                to=""
+                v-for="item in socialMedia"
+                :key="item.url"
+                class="p-3 border rounded-full group hover:border-transparent cursor-pointer hover:bg-[#FAD004] ease-in-out duration-300"
+              >
+                <component
+                  :is="item.icon"
+                  class="size-4 stroke-white group-hover:stroke-[#003ADA]"
+                />
+              </NuxtLink>
+            </div>
 
-          © Angkasa Pura Solusi 2024
+            <div class="flex flex-col gap-2">
+              <div class="flex gap-2 items-center">
+                <LucideMapPin class="size-4 stroke-white" />
+                <span class="text-white font-normal">Kantor Kami</span>
+              </div>
+              <span class="max-w-xs"
+                >Jl. Teknik Kimia, Keputih, Kec. Sukolilo, Surabaya, Jawa Timur
+                60111</span
+              >
+            </div>
+          </div>
+          <div class="w-full h-auto overflow-hidden rounded-xl">
+            <iframe
+              class="w-full h-[18rem]"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.63459597665!2d112.7923503758956!3d-7.2823506715716055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa1323221a93%3A0x306c3c99adedb258!2sInstitut%20Teknologi%20Sepuluh%20Nopember!5e0!3m2!1sid!2sid!4v1725092098548!5m2!1sid!2sid"
+              style="border: 0"
+              allowfullscreen="true"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div
+          class="flex w-full items-center justify-center font-semibold text-xs text-white"
+        >
+          Mechatronics Group 2024.
         </div>
       </div>
     </div>
   </footer>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { LucideYoutube, LucideInstagram, LucideMapPin } from "lucide-vue-next";
+
+const socialMedia = [
+  {
+    url: "https://www.instagram.com/",
+    icon: LucideInstagram,
+  },
+  {
+    url: "https://www.youtube.com/",
+    icon: LucideYoutube,
+  },
+];
+</script>

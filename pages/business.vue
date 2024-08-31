@@ -31,10 +31,10 @@
               <li
                 class="group/dot relative"
                 v-for="item in listNavigationAbout"
-                :key="item.title"
+                :key="item.flag"
               >
                 <NuxtLink
-                  :to="`${item.url}?component=${item.component}`"
+                  :to="`${item.url}`"
                   :class="{
                     'bg-[#F6BB00]': item.url == route.path,
                   }"
@@ -51,7 +51,7 @@
                   <div
                     class="flex items-center justify-between capitalize text-slate-500 group-hover:text-[#004A8A]"
                   >
-                    <span class="grow line-clamp-2"> {{ item.title }}</span>
+                    <span class="grow line-clamp-2"> {{ item.flag }}</span>
                     <span
                       class="flex flex-none ms-1.5 group-hover:xl:-me-3 group-hover:-me-1 transition-all"
                     >
@@ -94,21 +94,23 @@ definePageMeta({
   layout: "blog",
 });
 const route = useRoute();
-
+console.log(route);
 const listNavigationAbout = [
   {
-    title: "Mechatronic Vision",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum reiciendis aperiam molestias ipsum voluptatibus numquam illo! Suscipit nam impedit ducimus.",
+    flag: "mekanikal",
     url: "/business/mekanikal",
-    component: "VisiComp",
   },
   {
-    title: "Mechatronic Mission",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum reiciendis aperiam molestias ipsum voluptatibus numquam illo! Suscipit nam impedit ducimus.",
+    flag: "electrical",
     url: "/business/electrical",
-    component: "MisiComp",
+  },
+  {
+    flag: "konsultan",
+    url: "/business/konsultan",
+  },
+  {
+    flag: "informatika",
+    url: "/business/informatika",
   },
 ];
 </script>

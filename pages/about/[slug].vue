@@ -9,3 +9,5 @@ const component = computed(() => {
   return resolveComponent("Lazy" + query.component);
 });
 </script>
+
+<style scoped></style>

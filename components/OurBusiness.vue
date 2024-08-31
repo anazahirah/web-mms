@@ -44,10 +44,11 @@
                   >
                     {{ item.title }}
                   </div>
-                  <Button
-                    class="group/btn group-aria-expanded:inline-flex hidden justify-between items-center xl:py-3 xl:px-6 py-1.5 px-3 hover:xl:px-9"
-                    >Read More</Button
-                  >
+                  <Button class="w-fit group"
+                    >Read More
+                    <IconCaretRight
+                      class="size-5 -ml-4 group-hover:ml-2 duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+                  /></Button>
                 </div>
               </div>
             </div>
