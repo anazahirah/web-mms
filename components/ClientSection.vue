@@ -1,12 +1,12 @@
 <template>
-  <div class="pt-64 pb-12 flex flex-col gap-16">
+  <div class="py-64 flex flex-col gap-16 bg-[#fbd82d]">
     <div
       class="flex flex-col gap-3 items-center justify-center w-[90%] mx-auto"
     >
       <h4 class="text-primary text-5xl font-semibold tracking-tight">
         Who Trust Us
       </h4>
-      <p class="text-neutral-400 text-lg text-center max-w-4xl">
+      <p class="text-neutral-800 text-lg text-center max-w-4xl">
         We proudly partner with a diverse range of clients, from industry giants
         to innovative startups across sectors. These organizations trust us to
         deliver exceptional results, thanks to our commitment to excellence and

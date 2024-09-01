@@ -100,14 +100,14 @@ const listNavigationAbout = [
     title: "Mechatronic Vision",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum reiciendis aperiam molestias ipsum voluptatibus numquam illo! Suscipit nam impedit ducimus.",
-    url: "/business/mekanikal",
+    url: "/about/visi",
     component: "VisiComp",
   },
   {
     title: "Mechatronic Mission",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum reiciendis aperiam molestias ipsum voluptatibus numquam illo! Suscipit nam impedit ducimus.",
-    url: "/business/electrical",
+    url: "/about/misi",
     component: "MisiComp",
   },
 ];

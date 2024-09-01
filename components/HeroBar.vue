@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed navbar-animate top-0 left-0 right-0 max-w-[95%] mx-auto mt-4 rounded-3xl bg-[#FAD004] px-8 overflow-hidden z-50 flex justify-between items-center"
+    class="shadow-md fixed navbar-animate top-0 left-0 right-0 max-w-[95%] mx-auto mt-4 rounded-3xl bg-[#FAD004] px-8 overflow-hidden z-50 flex justify-between items-center"
   >
     <span class="menu-animate flex items-center gap-2"
       ><img src="/mechatronic.png" alt="logo mechatronic" class="size-10" />
@@ -49,13 +49,39 @@
       </NavigationMenuList>
     </NavigationMenu>
   </div>
-  <div class="w-full min-h-screen overflow-clip header">
+  <div class="w-full min-h-screen overflow-clip header my-auto pt-6">
     <div
-      class="w-[90%] h-full scale-150 image-container my-auto mx-auto overflow-clip rounded-3xl relative will-change-transform"
+      class="w-[90%] h-[90%] pt-4 scale-150 image-container mx-auto overflow-clip rounded-3xl relative will-change-transform"
     >
+      <div
+        @click="prevImage"
+        class="absolute left-4 top-1/2 -translate-y-1/2 z-30"
+      >
+        <div
+          class="p-3 border group hover:border-transparent hover:bg-[#FAD003] ease-in-out duration-300 border-white rounded-full"
+        >
+          <LucideChevronLeft
+            class="stroke-[#FAD003] group-hover:stroke-[#0004F0] duration-300 ease-in-out"
+          />
+        </div>
+      </div>
+
+      <div
+        class="absolute right-4 top-1/2 -translate-y-1/2 z-30"
+        @click="nextImage"
+      >
+        <div
+          class="p-3 border group hover:border-transparent hover:bg-[#FAD003] ease-in-out duration-300 border-white rounded-full"
+        >
+          <LucideChevronRight
+            class="stroke-[#FAD003] group-hover:stroke-[#0004F0] duration-300 ease-in-out"
+          />
+        </div>
+      </div>
+
       <img
         class="object-cover w-full h-full absolute left-0 top-0 image"
-        src="/header.jpg"
+        :src="heroImage[indexImage].image"
         alt="A stair case in a building with a window above it"
       />
       <div
@@ -82,30 +108,65 @@
 </template>
 
 <script setup lang="ts">
+import { LucideChevronLeft, LucideChevronRight } from "lucide-vue-next";
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
+
+const indexImage = ref(0);
+
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Mekanikal",
-    href: "/our-business/mekanikal",
+    href: "/business/mekanikal",
     description:
       "Solusi lengkap untuk kebutuhan teknik mesin, listrik, pemeliharaan sistem, konsultasi, dan desain segel mekanis.",
   },
   {
     title: "Electrical",
-    href: "/our-business/electrical",
+    href: "/business/electrical",
     description:
       "For sighted users to preview content available behind a link.",
   },
   {
     title: "Konsultan",
-    href: "/our-business/konsultan",
+    href: "/business/konsultan",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
   {
     title: "Informatika",
-    href: "/our-business/informatika",
+    href: "/business/informatika",
     description: "Visually or semantically separates content.",
   },
 ];
+
+const heroImage = [
+  {
+    image: "/mekanikal.webp",
+    alt: "image that representative our mechanical works",
+  },
+  {
+    image: "/electrical.webp",
+    alt: "image that representative our electrical works",
+  },
+  {
+    image: "/konsultan.webp",
+    alt: "image that representative our consultation works",
+  },
+  {
+    image: "/informatics.webp",
+    alt: "image that representative our informatics works",
+  },
+];
+
+function nextImage() {
+  if (indexImage.value <= heroImage.length - 1) {
+    indexImage.value++;
+  }
+}
+
+function prevImage() {
+  if (indexImage.value >= 0) {
+    indexImage.value--;
+  }
+}
 </script>

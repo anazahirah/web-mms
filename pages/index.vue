@@ -3,7 +3,7 @@
     <LazyMovingText class="my-32" />
     <LazyServiceBenefit />
     <LazyOurBusiness />
-    <LazyProductsSection />
+    <!-- <LazyProductsSection /> -->
     <LazyClientSection />
   </div>
 </template>

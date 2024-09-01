@@ -29,10 +29,10 @@
               @click="handleClick(index)"
             >
               <div
-                class="absolute z-10 w-full h-full flex flex-col justify-end bg-gradient-to-b from-transparent to-sky-950"
+                class="absolute z-20 w-full h-full flex flex-col justify-end bg-gradient-to-b from-transparent to-sky-950"
               >
                 <div
-                  class="group-aria-expanded:h-auto md:h-0 h-auto xl:p-6 p-3.5 text-left"
+                  class="group-aria-expanded:h-auto md:h-0 h-auto xl:p-6 p-3.5 text-left relative z-20"
                 >
                   <h4
                     class="font-semibold text-[#F6BB00] ease-in-out duration-300 origin-top-left md:-rotate-90 group-aria-expanded:w-full 2xl:w-[529px] xl:w-[407px] w-[325px] group-aria-expanded:md:rotate-0 text-nowrap"
@@ -51,6 +51,11 @@
                   /></Button>
                 </div>
               </div>
+              <img
+                :src="item.image"
+                class="z-0 relative transition-all ease-in-out duration-300 w-full h-full bg-fixed object-cover"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -81,6 +86,7 @@ const service = [
       "Solusi lengkap untuk kebutuhan teknik mesin, listrik, pemeliharaan sistem, konsultasi, dan desain segel mekanis.",
     slogan: "Fast",
     number: "01",
+    image: "/mekanikal.webp",
   },
   {
     title: "Steel Works and Pipe Works",
@@ -88,6 +94,7 @@ const service = [
       "Layanan fabrikasi dan pemasangan baja serta instalasi sistem perpipaan",
     slogan: "Steel and Pipe",
     number: "02",
+    image: "/electrical.webp",
   },
   {
     title: "Plumbing and Refrigeration",
@@ -95,6 +102,7 @@ const service = [
       "Instalasi, perbaikan, dan pemeliharaan sistem pipa air bersih/kotor serta sistem pendingin ruangan/industri.",
     slogan: " Pipe Protection",
     number: "03",
+    image: "/mekanikal.webp",
   },
   {
     title: "Contractor and Supplier",
@@ -102,6 +110,7 @@ const service = [
       "Penyedia jasa konstruksi dan pengadaan material/peralatan untuk berbagai proyek.",
     slogan: "Construction",
     number: "04",
+    image: "/mekanikal.webp",
   },
   {
     title: "Chiller and Heater",
@@ -109,6 +118,7 @@ const service = [
       "Penjualan dan pemasangan unit pendingin (chiller) dan pemanas (heater) untuk kebutuhan industri dan komersial.",
     slogan: "Comfort Number One",
     number: "05",
+    image: "/mekanikal.webp",
   },
   {
     title: "Machine Maker",
@@ -116,6 +126,7 @@ const service = [
       "Desain dan fabrikasi mesin sesuai kebutuhan spesifik industri.",
     slogan: "Your Needs",
     number: "06",
+    image: "/mekanikal.webp",
   },
 ];
 </script>

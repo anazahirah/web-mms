@@ -94,7 +94,7 @@ definePageMeta({
   layout: "blog",
 });
 const route = useRoute();
-console.log(route);
+
 const listNavigationAbout = [
   {
     flag: "mekanikal",

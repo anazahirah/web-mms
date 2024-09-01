@@ -8,19 +8,20 @@
 </template>
 
 <script setup lang="ts">
-const { $gsap: gsap, $SrollTrigger: SrollTrigger } = useNuxtApp();
+const { $gsap: gsap, $ScrollTrigger: ScrollTrigger } = useNuxtApp();
 
 onNuxtReady(() => {
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".header",
-        start: "top top",
-        end: "bottom top",
-        scrub: true,
-        pin: true,
-      },
-    })
+  const timeline = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".header",
+      start: "top top",
+      end: "bottom top",
+      scrub: true,
+      pin: true,
+    },
+  });
+
+  timeline
     .to(".image-container", { scale: 1, ease: "expo.inOut" })
     .from(".image", { filter: "blur(10px)", duration: 0 }, 0)
     .to(".scroller-nav", { opacity: 0, ease: "expo.inOut" }, 0)
@@ -29,6 +30,11 @@ onNuxtReady(() => {
     .from(".menu-animate", { opacity: 0, duration: 2, ease: "expo.inOut" })
     .from(".text-header", { opacity: 0, duration: 1, ease: "expo.inOut" })
     .to(".navbar-animate", { overflow: "visible", ease: "expo.inOut" });
+
+  onBeforeRouteLeave(() => {
+    ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    timeline.kill();
+  });
 });
 </script>
 

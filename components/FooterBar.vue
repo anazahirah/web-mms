@@ -1,12 +1,12 @@
 <template>
   <footer class="w-full overflow-hidden">
-    <div class="relative h-auto w-full bg-[#021024]">
-      <div
+    <div class="relative h-auto w-full bg-[#051939]">
+      <!-- <div
         class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"
       ></div>
       <div
         class="absolute left-0 right-0 top-[-10%] h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle_400px_at_50%_300px,#fbfbfb36,#021024)]"
-      ></div>
+      ></div> -->
 
       <div class="container relative z-30 py-8 md:py-12">
         <div class="w-full flex items-center justify-between gap-24">
@@ -122,6 +122,7 @@
           </div>
         </div>
       </div>
+      <Separator />
       <div
         class="bg-[#051939] w-full z-40 relative pt-16 pb-4 flex flex-col gap-8"
       >
@@ -152,17 +153,18 @@
                 <span class="text-white font-normal">Kantor Kami</span>
               </div>
               <span class="max-w-xs"
-                >Jl. Teknik Kimia, Keputih, Kec. Sukolilo, Surabaya, Jawa Timur
-                60111</span
+                >Jl. Raya Pasar Kemis Km 3,5 Kawasan Pergudangan Pos 88, Kuta
+                Jaya, Kec. Ps. Kemis, Kabupaten Tangerang, Banten 15560</span
               >
             </div>
           </div>
           <div class="w-full h-auto overflow-hidden rounded-xl">
             <iframe
               class="w-full h-[18rem]"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.63459597665!2d112.7923503758956!3d-7.2823506715716055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa1323221a93%3A0x306c3c99adedb258!2sInstitut%20Teknologi%20Sepuluh%20Nopember!5e0!3m2!1sid!2sid!4v1725092098548!5m2!1sid!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.649046445545!2d106.5679109!3d-6.1777122!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ffb0f587aa63%3A0x2d99d4279aa949c8!2sPT%20Mechatronic%20Mitra%20Solusi!5e0!3m2!1sid!2sid!4v1725185755441!5m2!1sid!2sid"
+              width="600"
+              height="450"
               style="border: 0"
-              allowfullscreen="true"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
