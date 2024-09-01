@@ -44,11 +44,13 @@
                   >
                     {{ item.title }}
                   </div>
-                  <Button class="w-fit group"
-                    >Read More
-                    <IconCaretRight
-                      class="size-5 -ml-4 group-hover:ml-2 duration-300 ease-in-out opacity-0 group-hover:opacity-100"
-                  /></Button>
+                  <NuxtLink :to="item.url">
+                    <Button class="w-fit group"
+                      >Read More
+                      <IconCaretRight
+                        class="size-5 -ml-4 group-hover:ml-2 duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+                    /></Button>
+                  </NuxtLink>
                 </div>
               </div>
               <img
@@ -87,6 +89,7 @@ const service = [
     slogan: "Fast",
     number: "01",
     image: "/mekanikal.webp",
+    url: "/business/mekanikal",
   },
   {
     title: "Steel Works and Pipe Works",
@@ -95,6 +98,7 @@ const service = [
     slogan: "Steel and Pipe",
     number: "02",
     image: "/electrical.webp",
+    url: "/business/electrical",
   },
   {
     title: "Plumbing and Refrigeration",
@@ -103,6 +107,7 @@ const service = [
     slogan: " Pipe Protection",
     number: "03",
     image: "/mekanikal.webp",
+    url: "/business/konsultan",
   },
   {
     title: "Contractor and Supplier",
@@ -111,22 +116,23 @@ const service = [
     slogan: "Construction",
     number: "04",
     image: "/mekanikal.webp",
+    url: "/business/informatika",
   },
-  {
-    title: "Chiller and Heater",
-    description:
-      "Penjualan dan pemasangan unit pendingin (chiller) dan pemanas (heater) untuk kebutuhan industri dan komersial.",
-    slogan: "Comfort Number One",
-    number: "05",
-    image: "/mekanikal.webp",
-  },
-  {
-    title: "Machine Maker",
-    description:
-      "Desain dan fabrikasi mesin sesuai kebutuhan spesifik industri.",
-    slogan: "Your Needs",
-    number: "06",
-    image: "/mekanikal.webp",
-  },
+  // {
+  //   title: "Chiller and Heater",
+  //   description:
+  //     "Penjualan dan pemasangan unit pendingin (chiller) dan pemanas (heater) untuk kebutuhan industri dan komersial.",
+  //   slogan: "Comfort Number One",
+  //   number: "05",
+  //   image: "/mekanikal.webp",
+  // },
+  // {
+  //   title: "Machine Maker",
+  //   description:
+  //     "Desain dan fabrikasi mesin sesuai kebutuhan spesifik industri.",
+  //   slogan: "Your Needs",
+  //   number: "06",
+  //   image: "/mekanikal.webp",
+  // },
 ];
 </script>
