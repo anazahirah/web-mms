@@ -1,7 +1,9 @@
 <template>
   <div class="bg-[#FAD003] w-full h-full relative overflow-hidden py-32">
-    <div class="grid grid-cols-2 w-[90%] mx-auto gap-12">
-      <div class="flex flex-col gap-8 col-span-1">
+    <div class="grid max-md:grid-rows-2 grid-cols-2 w-[90%] mx-auto gap-12">
+      <div
+        class="flex flex-col gap-8 col-span-1 max-md:row-span-1 max-md:row-start-2 max-md:col-span-2"
+      >
         <h2 class="font-semibold text-[clamp(1.5rem,3vw+1rem,3rem)]">
           Kenapa Mechatronic Mitra Solusi?
         </h2>
@@ -18,11 +20,13 @@
             class="size-5 ml-0 group-hover:ml-2 duration-300 ease-in-out opacity-0 group-hover:opacity-100"
         /></Button>
       </div>
-      <div class="absolute top-0 right-0 w-1/3 col-span-1">
+      <div
+        class="relative max-md:w-full w-1/3 col-span-1 max-md:row-span-1 max-md:col-span-2 max-md:row-start-1"
+      >
         <img
           src="/question-mark.png"
           alt="question mark 3D "
-          class="object-contain object-center w-full"
+          class="object-contain object-center w-full absolute top-0 right-0"
         />
       </div>
     </div>

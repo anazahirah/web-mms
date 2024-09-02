@@ -9,7 +9,9 @@
       ></div> -->
 
       <div class="container relative z-30 py-8 md:py-12">
-        <div class="w-full flex items-center justify-between gap-24">
+        <div
+          class="w-full flex flex-row max-md:flex-col items-center justify-between gap-24"
+        >
           <div class="w-full flex item-start flex-col justify-start">
             <img
               src="/mechatronic.png"
@@ -126,9 +128,9 @@
       <div
         class="bg-[#051939] w-full z-40 relative pt-16 pb-4 flex flex-col gap-8"
       >
-        <div class="container flex items-center">
+        <div class="container flex max-md:flex-col flex-row items-center">
           <div
-            class="flex flex-col gap-8 p-8 bg-[#003ADA] rounded-2xl text-white w-[30rem] h-[20rem] -mr-2 relative z-30"
+            class="flex flex-col gap-8 p-8 bg-[#003ADA] rounded-2xl text-white max-md:w-[20rem] max-md:h-[24rem] w-[30rem] h-[20rem] -mr-2 max-md:mr-0 max-md:-mb-2 relative z-30"
           >
             <h5 class="text-[clamp(1.125rem,2vw+1rem,1.2rem)] font-semibold">
               Temukan Kami Di
@@ -158,9 +160,11 @@
               >
             </div>
           </div>
-          <div class="w-full h-auto overflow-hidden rounded-xl">
+          <div
+            class="w-full h-auto flex items-center justify-center overflow-hidden rounded-xl"
+          >
             <iframe
-              class="w-full h-[18rem]"
+              class="w-full h-[18rem] max-md:h-[450px] max-md:w-[22rem]"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.649046445545!2d106.5679109!3d-6.1777122!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ffb0f587aa63%3A0x2d99d4279aa949c8!2sPT%20Mechatronic%20Mitra%20Solusi!5e0!3m2!1sid!2sid!4v1725185755441!5m2!1sid!2sid"
               width="600"
               height="450"

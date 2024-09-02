@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-full relative overflow-hidden py-32">
     <div class="grid grid-cols-5 w-[90%] mx-auto gap-24">
-      <div class="flex flex-col gap-1 col-span-2 relative">
+      <div class="flex flex-col gap-1 col-span-2 relative max-md:col-span-6">
         <h2 class="font-semibold text-[clamp(1.5rem,3vw+1rem,3rem)]">
           Our Business
         </h2>
@@ -15,12 +15,12 @@
           class="w-fit"
         />
       </div>
-      <div class="flex flex-col gap-6 col-span-3 relative">
-        <div class="flex gap-2">
+      <div class="flex flex-col gap-6 col-span-3 relative max-md:col-span-6">
+        <div class="flex gap-2 max-md:flex-col">
           <div v-for="(item, index) in service" :key="index">
             <div
               :class="[
-                'group relative transition-all ease-in-out duration-300 max-md:w-full 2xl:h-[529px] xl:h-[407px] md:h-[325px] rounded-2xl bg-blue-500 overflow-hidden',
+                'group relative transition-all ease-in-out duration-300 max-md:w-[80%] 2xl:h-[529px] xl:h-[407px] md:h-[325px] rounded-2xl bg-blue-500 overflow-hidden ',
                 clickedIndex === index
                   ? '2xl:w-[337px] xl:w-[260px] md:w-[208px] h-[325px]'
                   : '2xl:w-[94px] xl:w-[72px] md:w-[57px] h-[57px]',
@@ -61,7 +61,7 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col gap-3">
+        <div class="flex flex-col gap-3 max-md:max-w-sm">
           <h3 class="font-semibold text-[clamp(1.375rem,3vw+1rem,2rem)]">
             {{ service[clickedIndex].title }}
           </h3>

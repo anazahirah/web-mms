@@ -55,7 +55,7 @@
     >
       <div
         @click="prevImage"
-        class="absolute left-4 top-1/2 -translate-y-1/2 z-30"
+        class="absolute max-md:left-1/2 max-md:-translate-x-1/2 max-md:top-1/4 max-md:translate-y-0 left-4 top-1/2 -translate-y-1/2 z-30"
       >
         <div
           class="p-3 border group hover:border-transparent hover:bg-[#FAD003] ease-in-out duration-300 border-white rounded-full"
@@ -67,7 +67,7 @@
       </div>
 
       <div
-        class="absolute right-4 top-1/2 -translate-y-1/2 z-30"
+        class="absolute right-4 bottom-1/2 -translate-y-1/2 z-30 max-md:right-1/2 max-md:translate-x-1/2 max-md:bottom-1/4 max-md:translate-y-0"
         @click="nextImage"
       >
         <div

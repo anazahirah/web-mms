@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col w-full">
-    <LazyMovingText class="my-32" />
+    <LazyMovingText class="max-md:my-6 my-32" />
     <LazyServiceBenefit />
     <LazyOurBusiness />
     <!-- <LazyProductsSection /> -->

@@ -1,5 +1,5 @@
 <template>
-  <div class="py-64 flex flex-col gap-16 bg-[#fbd82d]">
+  <div class="max-md:py-32 py-64 flex flex-col gap-16 bg-[#fbd82d]">
     <div
       class="flex flex-col gap-3 items-center justify-center w-[90%] mx-auto"
     >
@@ -15,7 +15,9 @@
       </p>
     </div>
 
-    <div class="grid grid-cols-4 gap-8 mx-auto w-[90%]">
+    <div
+      class="grid max-md:grid-cols-1 max-md:place-items-center grid-cols-4 gap-8 mx-auto w-[90%]"
+    >
       <CardClient
         v-for="logo in clientLogo"
         :key="logo.alt"
