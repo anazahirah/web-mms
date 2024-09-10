@@ -14,11 +14,13 @@
           untuk otomasi industri. Kami berkomitmen memenuhi kebutuhan spesifik
           Anda dengan layanan yang andal dan efisien
         </p>
-        <Button class="w-fit group"
-          >Read More About Us
-          <IconCaretRight
-            class="size-5 ml-0 group-hover:ml-2 duration-300 ease-in-out opacity-0 group-hover:opacity-100"
-        /></Button>
+        <NuxtLink to="/about/visi?component=VisiComp">
+          <Button class="w-fit group"
+            >Read More About Us
+            <IconCaretRight
+              class="size-5 ml-0 group-hover:ml-2 duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+          /></Button>
+        </NuxtLink>
       </div>
       <div
         class="relative max-md:w-full w-1/3 col-span-1 max-md:row-span-1 max-md:col-span-2 max-md:row-start-1"

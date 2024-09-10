@@ -2,14 +2,14 @@
   <Breadcrumb class="hidden md:flex">
     <BreadcrumbList>
       <template v-for="(item, index) in splitRoute" :key="index">
-        <BreadcrumbItem class="text-white">
+        <BreadcrumbItem class="text-primary">
           <BreadcrumbLink as-child>
             {{ item }}
           </BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbSeparator
           v-if="index < splitRoute.length - 1"
-          class="stroke-white"
+          class="stroke-primary"
         />
       </template>
     </BreadcrumbList>

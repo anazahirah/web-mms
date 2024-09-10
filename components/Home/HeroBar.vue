@@ -1,6 +1,6 @@
 <template>
   <div
-    class="shadow-md fixed navbar-animate top-0 left-0 right-0 max-w-[95%] mx-auto mt-4 rounded-3xl bg-[#FAD004] px-8 overflow-hidden z-50 flex justify-between items-center"
+    class="shadow-md fixed navbar-animate top-0 left-0 right-0 max-w-[80%] mx-auto mt-4 rounded-3xl bg-[#FAD004] px-8 overflow-hidden z-50 flex justify-between items-center"
   >
     <span class="menu-animate flex items-center gap-2"
       ><img src="/mechatronic.png" alt="logo mechatronic" class="size-10" />
@@ -11,7 +11,7 @@
         <NavigationMenuItem>
           <NavigationMenuTrigger>Our Business</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul class="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
+            <ul class="grid w-[400px] gap-3 p-4 md:grid-cols-1">
               <li v-for="component in components" :key="component.title">
                 <NavigationMenuLink as-child>
                   <a
@@ -38,12 +38,6 @@
             :class="navigationMenuTriggerStyle()"
           >
             About Us
-          </NavigationMenuLink>
-        </NavigationMenuItem>
-
-        <NavigationMenuItem>
-          <NavigationMenuLink :class="navigationMenuTriggerStyle()">
-            Our Partners
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
@@ -78,12 +72,14 @@
           />
         </div>
       </div>
-
-      <img
-        class="object-cover w-full h-full absolute left-0 top-0 image"
-        :src="heroImage[indexImage].image"
-        alt="A stair case in a building with a window above it"
-      />
+      <Transition>
+        <img
+          class="object-cover w-full h-full absolute left-0 top-0 image"
+          :src="heroImage[indexImage].image"
+          :key="heroImage[indexImage].image"
+          alt="A stair case in a building with a window above it"
+        />
+      </Transition>
       <div
         class="flex flex-col gap-14 w-full items-center justify-center z-20 h-full relative text-secondary text-center"
       >
@@ -110,53 +106,8 @@
 <script setup lang="ts">
 import { LucideChevronLeft, LucideChevronRight } from "lucide-vue-next";
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
-
+import { components, heroImage } from "@/constant/data";
 const indexImage = ref(0);
-
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "Mekanikal",
-    href: "/business/mekanikal",
-    description:
-      "Solusi lengkap untuk kebutuhan teknik mesin, listrik, pemeliharaan sistem, konsultasi, dan desain segel mekanis.",
-  },
-  {
-    title: "Electrical",
-    href: "/business/electrical",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Konsultan",
-    href: "/business/konsultan",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Informatika",
-    href: "/business/informatika",
-    description: "Visually or semantically separates content.",
-  },
-];
-
-const heroImage = [
-  {
-    image: "/mekanikal.webp",
-    alt: "image that representative our mechanical works",
-  },
-  {
-    image: "/electrical.webp",
-    alt: "image that representative our electrical works",
-  },
-  {
-    image: "/konsultan.webp",
-    alt: "image that representative our consultation works",
-  },
-  {
-    image: "/informatics.webp",
-    alt: "image that representative our informatics works",
-  },
-];
 
 function nextImage() {
   if (indexImage.value <= heroImage.length - 1) {
@@ -164,9 +115,33 @@ function nextImage() {
   }
 }
 
+function createInfiniteLoop(interval = 4000) {
+  function loop() {
+    indexImage.value = (indexImage.value + 1) % heroImage.length;
+
+    setTimeout(loop, interval);
+  }
+
+  loop();
+}
+
+createInfiniteLoop();
+
 function prevImage() {
   if (indexImage.value >= 0) {
     indexImage.value--;
   }
 }
 </script>
+
+<style>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 1s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+</style>

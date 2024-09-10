@@ -19,7 +19,7 @@
       class="grid max-md:grid-cols-1 max-md:place-items-center grid-cols-4 gap-8 mx-auto w-[90%]"
     >
       <CardClient
-        v-for="logo in clientLogo"
+        v-for="logo in client"
         :key="logo.alt"
         :image="logo.image"
         :alt="logo.alt"
@@ -31,48 +31,5 @@
 </template>
 
 <script setup lang="ts">
-const clientLogo = [
-  {
-    image: "/lg.png",
-    alt: "Logo LG",
-    url: "/",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat!",
-  },
-  {
-    image: "/mayora.png",
-    alt: "Logo Mayora",
-    url: "/",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat!",
-  },
-  {
-    image: "/loreal.svg",
-    alt: "Logo Loreal",
-    url: "/",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat!",
-  },
-  {
-    image: "/cabot.png",
-    alt: "Logo Cabot",
-    url: "/",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat!",
-  },
-  {
-    image: "/nestle.png",
-    alt: "Logo Nestle",
-    url: "/",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat!",
-  },
-  {
-    image: "/yamaha.png",
-    alt: "Logo Yamaha",
-    url: "/",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat!",
-  },
-];
+import { client } from "@/constant/data";
 </script>
