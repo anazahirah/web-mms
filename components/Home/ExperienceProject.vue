@@ -16,7 +16,7 @@
         industrial capabilities.
       </p>
     </div>
-    <div class="w-full max-w-screen-lg mx-auto rounded-md overflow-hidden">
+    <div class="w-[90%] max-w-screen-lg mx-auto rounded-md overflow-hidden">
       <iframe
         class="w-full aspect-video"
         src="https://www.youtube.com/embed/PBo5C45lN6M?si=HXNRXetQRWQZhISD"

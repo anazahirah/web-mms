@@ -39,6 +39,7 @@ export default defineNuxtConfig({
     routes: ["/"],
   },
   target: "static",
+
   modules: [
     "@nuxtjs/seo",
     "@nuxtjs/tailwindcss",
@@ -48,6 +49,7 @@ export default defineNuxtConfig({
     "nuxt-lucide-icons",
     "@vueuse/nuxt",
     "@nuxt/content",
+    "nuxt-viewport",
   ],
   lucide: {
     namePrefix: "Icon",

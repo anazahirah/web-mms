@@ -2,11 +2,16 @@
   <div
     class="shadow-md fixed navbar-animate top-0 left-0 right-0 max-w-[80%] mx-auto mt-4 rounded-3xl bg-[#FAD004] px-8 overflow-hidden z-50 flex justify-between items-center"
   >
-    <span class="menu-animate flex items-center gap-2"
-      ><img src="/mechatronic.png" alt="logo mechatronic" class="size-10" />
-      Mechatronics Mitra Solusi</span
+    <div class="menu-animate flex items-center gap-2">
+      <img src="/mechatronic.png" alt="logo mechatronic" class="size-10" />
+      <span v-show="$viewport.isGreaterThan('tablet')">
+        Mechatronics Mitra Solusi</span
+      >
+    </div>
+    <NavigationMenu
+      class="menu-animate"
+      v-show="$viewport.isGreaterThan('desktop')"
     >
-    <NavigationMenu class="menu-animate">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Our Business</NavigationMenuTrigger>
@@ -42,6 +47,42 @@
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
+    <Popover v-if="$viewport.isLessThan('desktop')">
+      <PopoverTrigger class="menu-animate">
+        <Button> Menu</Button>
+      </PopoverTrigger>
+      <PopoverContent>
+        <div class="grid gap-4">
+          <div class="flex justify-start gap-4 w-fit">
+            <Button variant="link" @click="activate = !activate"
+              >Business</Button
+            >
+            <div class="bg-border relative mx-auto w-[1px] h-full"></div>
+            <NuxtLink to="/about"
+              ><Button variant="link">About Us </Button></NuxtLink
+            >
+          </div>
+          <Separator v-show="activate" class="ease-in-out duration-300" />
+          <div
+            :class="{
+              'h-0 ': !activate,
+              'h-[12rem]': activate,
+            }"
+            class="grid gap-2 overflow-clip duration-500 ease-in-out"
+          >
+            <NuxtLink
+              v-for="component in components"
+              :key="component.title"
+              class="w-full col-span-1"
+              :to="component.href"
+              ><Button class="w-full" variant="outline">{{
+                component.title
+              }}</Button></NuxtLink
+            >
+          </div>
+        </div>
+      </PopoverContent>
+    </Popover>
   </div>
   <div class="w-full min-h-screen overflow-clip header my-auto pt-6">
     <div
@@ -49,7 +90,7 @@
     >
       <div
         @click="prevImage"
-        class="absolute max-md:left-1/2 max-md:-translate-x-1/2 max-md:top-1/4 max-md:translate-y-0 left-4 top-1/2 -translate-y-1/2 z-30"
+        class="absolute max-lg:left-1/2 max-lg:-translate-x-1/2 max-lg:top-1/4 max-lg:translate-y-0 left-4 top-1/2 -translate-y-1/2 z-30"
       >
         <div
           class="p-3 border group hover:border-transparent hover:bg-[#FAD003] ease-in-out duration-300 border-white rounded-full"
@@ -61,7 +102,7 @@
       </div>
 
       <div
-        class="absolute right-4 bottom-1/2 -translate-y-1/2 z-30 max-md:right-1/2 max-md:translate-x-1/2 max-md:bottom-1/4 max-md:translate-y-0"
+        class="absolute right-4 bottom-1/2 -translate-y-1/2 z-30 max-lg:right-1/2 max-lg:translate-x-1/2 max-lg:bottom-1/4 max-lg:translate-y-0"
         @click="nextImage"
       >
         <div
@@ -107,7 +148,10 @@
 import { LucideChevronLeft, LucideChevronRight } from "lucide-vue-next";
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import { components, heroImage } from "@/constant/data";
+const { $viewport } = useNuxtApp();
 const indexImage = ref(0);
+
+const activate = ref(false);
 
 function nextImage() {
   if (indexImage.value <= heroImage.length - 1) {
@@ -125,8 +169,9 @@ function createInfiniteLoop(interval = 4000) {
   loop();
 }
 
-createInfiniteLoop();
-
+onMounted(() => {
+  createInfiniteLoop();
+});
 function prevImage() {
   if (indexImage.value >= 0) {
     indexImage.value--;

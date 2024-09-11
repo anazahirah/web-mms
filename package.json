@@ -21,6 +21,7 @@
     "embla-carousel-vue": "^8.2.0",
     "nuxt": "^3.12.4",
     "nuxt-lucide-icons": "^1.0.5",
+    "nuxt-viewport": "^2.1.6",
     "radix-vue": "^1.9.3",
     "shadcn-nuxt": "^0.10.4",
     "tailwind-merge": "^2.4.0",

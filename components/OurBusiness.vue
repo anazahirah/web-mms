@@ -15,12 +15,12 @@
           class="w-fit"
         />
       </div>
-      <div class="flex flex-col gap-6 col-span-3 relative max-md:col-span-6">
+      <div class="flex flex-col gap-6 col-span-3 relative max-sm:col-span-6">
         <div class="flex gap-2 max-md:flex-col">
           <div v-for="(item, index) in service" :key="index">
             <div
               :class="[
-                'group relative transition-all ease-in-out duration-300 max-md:w-[80%] 2xl:h-[529px] xl:h-[407px] md:h-[325px] rounded-2xl bg-blue-500 overflow-hidden ',
+                'group relative transition-all ease-in-out duration-300 max-md:w-[95%] 2xl:h-[529px] xl:h-[407px] md:h-[325px] rounded-2xl bg-blue-500 overflow-hidden ',
                 clickedIndex === index
                   ? '2xl:w-[337px] xl:w-[260px] md:w-[208px] h-[325px]'
                   : '2xl:w-[94px] xl:w-[72px] md:w-[57px] h-[57px]',
@@ -75,64 +75,9 @@
 </template>
 
 <script setup lang="ts">
+import { service } from "@/constant/data";
 const clickedIndex = ref<number>(0);
-
 function handleClick(index: number) {
   clickedIndex.value = index;
 }
-
-const service = [
-  {
-    title: "Engineering Service",
-    description:
-      "Solusi lengkap untuk kebutuhan teknik mesin, listrik, pemeliharaan sistem, konsultasi, dan desain segel mekanis.",
-    slogan: "Fast",
-    number: "01",
-    image: "/mekanikal.webp",
-    url: "/business/mekanikal",
-  },
-  {
-    title: "Steel Works and Pipe Works",
-    description:
-      "Layanan fabrikasi dan pemasangan baja serta instalasi sistem perpipaan",
-    slogan: "Steel and Pipe",
-    number: "02",
-    image: "/electrical.webp",
-    url: "/business/electrical",
-  },
-  {
-    title: "Plumbing and Refrigeration",
-    description:
-      "Instalasi, perbaikan, dan pemeliharaan sistem pipa air bersih/kotor serta sistem pendingin ruangan/industri.",
-    slogan: " Pipe Protection",
-    number: "03",
-    image: "/mekanikal.webp",
-    url: "/business/konsultan",
-  },
-  {
-    title: "Contractor and Supplier",
-    description:
-      "Penyedia jasa konstruksi dan pengadaan material/peralatan untuk berbagai proyek.",
-    slogan: "Construction",
-    number: "04",
-    image: "/mekanikal.webp",
-    url: "/business/informatika",
-  },
-  // {
-  //   title: "Chiller and Heater",
-  //   description:
-  //     "Penjualan dan pemasangan unit pendingin (chiller) dan pemanas (heater) untuk kebutuhan industri dan komersial.",
-  //   slogan: "Comfort Number One",
-  //   number: "05",
-  //   image: "/mekanikal.webp",
-  // },
-  // {
-  //   title: "Machine Maker",
-  //   description:
-  //     "Desain dan fabrikasi mesin sesuai kebutuhan spesifik industri.",
-  //   slogan: "Your Needs",
-  //   number: "06",
-  //   image: "/mekanikal.webp",
-  // },
-];
 </script>
