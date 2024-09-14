@@ -1,10 +1,10 @@
 <template>
   <div
-    class="shadow-md fixed navbar-animate top-0 left-0 right-0 max-w-[80%] mx-auto mt-4 rounded-3xl bg-[#FAD004] px-8 overflow-hidden z-50 flex justify-between items-center"
+    class="fixed navbar-animate top-0 left-0 right-0 max-w-full backdrop-blur-sm mx-auto bg-transparent shadow-sm py-5 px-8 sm:px-24 z-50 flex border-b border-[#FAD003] justify-between items-center"
   >
     <div class="menu-animate flex items-center gap-2">
       <img src="/mechatronic.png" alt="logo mechatronic" class="size-10" />
-      <span v-show="$viewport.isGreaterThan('tablet')">
+      <span v-show="$viewport.isGreaterOrEquals('tablet')">
         Mechatronics Mitra Solusi</span
       >
     </div>
@@ -14,9 +14,11 @@
     >
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Our Business</NavigationMenuTrigger>
+          <NavigationMenuTrigger class="bg-primary text-primary-foreground"
+            >Our Business</NavigationMenuTrigger
+          >
           <NavigationMenuContent>
-            <ul class="grid w-[400px] gap-3 p-4 md:grid-cols-1">
+            <ul class="grid w-[250px] gap-3 p-4 md:grid-cols-1">
               <li v-for="component in components" :key="component.title">
                 <NavigationMenuLink as-child>
                   <a
@@ -39,6 +41,7 @@
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink
+            class="bg-primary text-primary-foreground"
             href="/about"
             :class="navigationMenuTriggerStyle()"
           >
@@ -49,7 +52,7 @@
     </NavigationMenu>
     <Popover v-if="$viewport.isLessThan('desktop')">
       <PopoverTrigger class="menu-animate">
-        <Button> Menu</Button>
+        <Button size="icon"><LucideMenu class="size-6" /></Button>
       </PopoverTrigger>
       <PopoverContent>
         <div class="grid gap-4">
@@ -86,7 +89,7 @@
   </div>
   <div class="w-full min-h-screen overflow-clip header my-auto pt-6">
     <div
-      class="w-[90%] h-[90%] pt-4 scale-150 image-container mx-auto overflow-clip rounded-3xl relative will-change-transform"
+      class="w-[80%] h-[90%] pt-4 scale-150 image-container mx-auto overflow-clip rounded-3xl relative will-change-transform"
     >
       <div
         @click="prevImage"
@@ -145,7 +148,11 @@
 </template>
 
 <script setup lang="ts">
-import { LucideChevronLeft, LucideChevronRight } from "lucide-vue-next";
+import {
+  LucideChevronLeft,
+  LucideChevronRight,
+  LucideMenu,
+} from "lucide-vue-next";
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import { components, heroImage } from "@/constant/data";
 const { $viewport } = useNuxtApp();
