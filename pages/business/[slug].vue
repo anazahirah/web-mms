@@ -47,7 +47,7 @@
     </div>
 
     <article class="prose lg:prose-xl">
-      <ContentRenderer :value="data">
+      <ContentRenderer :value="data!">
         <template #empty>
           <p>No content found.</p>
         </template>

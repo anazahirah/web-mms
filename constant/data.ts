@@ -1,3 +1,10 @@
+import {
+  LucideYoutube,
+  LucideInstagram,
+  LucidePhone,
+  LucideMail,
+} from "lucide-vue-next";
+
 export const client = [
   {
     image: "/lg.png",
@@ -148,5 +155,64 @@ export const heroImage = [
     image: "/informatics.webp",
     alt: "image that representative our informatics works",
     color: "white",
+  },
+];
+
+export const socialMedia = [
+  {
+    url: "https://www.instagram.com/",
+    icon: LucideInstagram,
+  },
+  {
+    url: "https://www.youtube.com/",
+    icon: LucideYoutube,
+  },
+  {
+    url: "mailto:info@mechatronic.mitra.co.id",
+    icon: LucideMail,
+  },
+  {
+    url: "tel:+628123456789",
+    icon: LucidePhone,
+  },
+];
+
+// Business Page
+
+export const listNavigationBusiness = [
+  {
+    flag: "mekanikal",
+    url: "/business/mekanikal",
+  },
+  {
+    flag: "electrical",
+    url: "/business/electrical",
+  },
+  {
+    flag: "konsultan",
+    url: "/business/konsultan",
+  },
+  {
+    flag: "informatika",
+    url: "/business/informatika",
+  },
+];
+
+// About Page
+
+export const listNavigationAbout = [
+  {
+    title: "Mechatronic Vision",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum reiciendis aperiam molestias ipsum voluptatibus numquam illo! Suscipit nam impedit ducimus.",
+    url: "/about/visi",
+    component: "VisiComp",
+  },
+  {
+    title: "Mechatronic Mission",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum reiciendis aperiam molestias ipsum voluptatibus numquam illo! Suscipit nam impedit ducimus.",
+    url: "/about/misi",
+    component: "MisiComp",
   },
 ];

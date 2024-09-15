@@ -90,25 +90,9 @@
 </template>
 
 <script setup lang="ts">
+import { listNavigationAbout } from "@/constant/data";
 definePageMeta({
   layout: "blog",
 });
 const route = useRoute();
-
-const listNavigationAbout = [
-  {
-    title: "Mechatronic Vision",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum reiciendis aperiam molestias ipsum voluptatibus numquam illo! Suscipit nam impedit ducimus.",
-    url: "/about/visi",
-    component: "VisiComp",
-  },
-  {
-    title: "Mechatronic Mission",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum reiciendis aperiam molestias ipsum voluptatibus numquam illo! Suscipit nam impedit ducimus.",
-    url: "/about/misi",
-    component: "MisiComp",
-  },
-];
 </script>

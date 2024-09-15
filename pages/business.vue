@@ -30,7 +30,7 @@
             >
               <li
                 class="group/dot relative"
-                v-for="item in listNavigationAbout"
+                v-for="item in listNavigationBusiness"
                 :key="item.flag"
               >
                 <NuxtLink
@@ -90,27 +90,9 @@
 </template>
 
 <script setup lang="ts">
+import { listNavigationBusiness } from "@/constant/data";
 definePageMeta({
   layout: "blog",
 });
 const route = useRoute();
-
-const listNavigationAbout = [
-  {
-    flag: "mekanikal",
-    url: "/business/mekanikal",
-  },
-  {
-    flag: "electrical",
-    url: "/business/electrical",
-  },
-  {
-    flag: "konsultan",
-    url: "/business/konsultan",
-  },
-  {
-    flag: "informatika",
-    url: "/business/informatika",
-  },
-];
 </script>

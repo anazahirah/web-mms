@@ -179,30 +179,6 @@
 </template>
 
 <script setup lang="ts">
-import {
-  LucideYoutube,
-  LucideInstagram,
-  LucideMapPin,
-  LucidePhone,
-  LucideMail,
-} from "lucide-vue-next";
-
-const socialMedia = [
-  {
-    url: "https://www.instagram.com/",
-    icon: LucideInstagram,
-  },
-  {
-    url: "https://www.youtube.com/",
-    icon: LucideYoutube,
-  },
-  {
-    url: "mailto:info@mechatronic.mitra.co.id",
-    icon: LucideMail,
-  },
-  {
-    url: "tel:+628123456789",
-    icon: LucidePhone,
-  },
-];
+import { socialMedia } from "@/constant/data";
+import { LucideMapPin } from "lucide-vue-next";
 </script>
