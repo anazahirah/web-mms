@@ -1,7 +1,7 @@
 <template>
   <NuxtPage />
 
-  <LazyFooterBar />
+  <LazyNavFooterBar />
 </template>
 
 <script setup lang="ts"></script>

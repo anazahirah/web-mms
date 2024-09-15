@@ -3,17 +3,19 @@
     <div
       class="flex flex-col gap-3 items-center justify-center w-[90%] mx-auto"
     >
-      <h4 class="text-primary text-5xl font-semibold tracking-tight">
+      <h4
+        class="text-primary max-md:text-3xl text-5xl font-semibold tracking-tight"
+      >
         Experience Project
       </h4>
-      <p class="text-neutral-800 text-lg text-center max-w-4xl">
-        At Mechatronics, we deliver exceptional engineering and industrial
-        solutions tailored to each client's unique needs. From customized
-        machine design and manufacturing to comprehensive engineering services,
-        our extensive experience enhances productivity and drives business
-        growth. With a proven track record of managing projects with precision,
-        innovation, and quality, we are your trusted partner for optimizing
-        industrial capabilities.
+      <p
+        class="text-neutral-800 max-md:text-base text-xl text-center max-w-4xl"
+      >
+        Mechatronics provides custom engineering and industrial solutions to
+        boost productivity and growth. We offer tailored machine design,
+        manufacturing, and comprehensive engineering services, managing projects
+        with precision and innovation. Trust us to optimize your industrial
+        capabilities
       </p>
     </div>
     <div class="w-[90%] max-w-screen-lg mx-auto rounded-md overflow-hidden">

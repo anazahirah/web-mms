@@ -38,7 +38,6 @@ export default defineNuxtConfig({
   generate: {
     routes: ["/"],
   },
-  target: "static",
 
   modules: [
     "@nuxtjs/seo",

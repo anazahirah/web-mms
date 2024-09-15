@@ -1,12 +1,12 @@
 <template>
   <LazyHomeHeroBar />
   <div class="flex flex-col w-full overflow-clip">
-    <LazyMovingText class="max-md:my-6 my-32" />
+    <LazyHomeMovingText class="max-md:my-6 mb-12 relative" />
     <LazyHomeWhyUs />
-    <LazyServiceBenefit />
-    <LazyOurBusiness />
+    <LazyHomeServiceBenefit />
+    <LazyHomeOurBusiness />
     <!-- <LazyProductsSection /> -->
-    <LazyClientSection />
+    <LazyHomeClientSection />
     <LazyHomeExperienceProject />
   </div>
 </template>
@@ -34,7 +34,6 @@ onNuxtReady(() => {
     .from(".navbar-animate", { opacity: 0, ease: "expo.inOut" });
 
   onBeforeRouteLeave(() => {
-    console.log("a");
     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     timeline.kill();
   });

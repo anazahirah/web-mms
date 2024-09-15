@@ -4,20 +4,21 @@
   >
     <div class="w-full flex max-lg:flex-col flex-row gap-16">
       <div
-        class="max-lg:relative sticky top-0 self-start tracking-tight pt-4 max-lg:w-full max-lg:text-center w-1/3 text-4xl font-bold text-primary"
+        class="max-lg:relative sticky top-0 self-start tracking-tight pt-4 max-lg:w-full max-lg:text-center w-1/3 left-0 text-4xl font-bold text-primary"
       >
         WHY
         <span class="text-neutral-400"> US?</span>
+        <!-- <IconsCompareArrow class="top-0 right-0 size-1/2" /> -->
       </div>
-      <div class="flex max-lg:w-full w-2/3 flex-col gap-32 pt-4">
-        <h4
+      <div class="flex max-lg:w-full w-2/3 flex-col gap-8 pt-4 relative">
+        <!-- <h4
           class="text-3xl font-medium text-primary leading-snug text-justify text-neutral-500"
         >
           PT Mechatronic Mitra Solusi menghadirkan
           <span class="font-bold underline text-black"> solusi terbaik </span>
           untuk otomasi industri. Kami berkomitmen memenuhi kebutuhan spesifik
           Anda dengan layanan yang andal dan efisien
-        </h4>
+        </h4> -->
 
         <div class="flex flex-col gap-10">
           <div class="flex flex-col gap-2 5">
@@ -38,6 +39,15 @@
               :number="item.number"
             />
           </div>
+
+          <!-- <h4
+            class="text-3xl font-medium text-primary leading-snug text-justify text-neutral-500"
+          >
+            PT Mechatronic Mitra Solusi menghadirkan
+            <span class="font-bold underline text-black"> solusi terbaik </span>
+            untuk otomasi industri. Kami berkomitmen memenuhi kebutuhan spesifik
+            Anda dengan layanan yang andal dan efisien
+          </h4> -->
         </div>
       </div>
     </div>
@@ -45,6 +55,8 @@
 </template>
 
 <script setup lang="ts">
+import IconsCompareArrow from "@/icons/CompareArrow.vue";
+
 import {
   LucideFastForward,
   LucideWrench,

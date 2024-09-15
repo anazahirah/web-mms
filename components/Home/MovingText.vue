@@ -1,6 +1,6 @@
 <template>
   <div
-    class="font-semibold w-[120%] -translate-x-[4rem] md:-translate-x-[8rem] mx-auto py-4 whitespace-nowrap uppercase"
+    class="font-semibold w-[120%] -translate-x-[4rem] md:-translate-x-[8rem] mx-auto whitespace-nowrap uppercase"
   >
     <span
       id="running-text"

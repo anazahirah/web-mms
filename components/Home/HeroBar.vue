@@ -48,24 +48,35 @@
             About Us
           </NavigationMenuLink>
         </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuLink
+            class="bg-primary text-primary-foreground"
+            href="mailto:info@mechatronic.mitra.co.id"
+            :class="navigationMenuTriggerStyle()"
+          >
+            Contact Us
+          </NavigationMenuLink>
+        </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
-    <Popover v-if="$viewport.isLessThan('desktop')">
-      <PopoverTrigger class="menu-animate">
-        <Button size="icon"><LucideMenu class="size-6" /></Button>
-      </PopoverTrigger>
-      <PopoverContent>
-        <div class="grid gap-4">
-          <div class="flex justify-start gap-4 w-fit">
-            <Button variant="link" @click="activate = !activate"
-              >Business</Button
-            >
-            <div class="bg-border relative mx-auto w-[1px] h-full"></div>
-            <NuxtLink to="/about"
-              ><Button variant="link">About Us </Button></NuxtLink
-            >
-          </div>
-          <Separator v-show="activate" class="ease-in-out duration-300" />
+    <DropdownMenu v-if="$viewport.isLessThan('desktop')">
+      <DropdownMenuTrigger>
+        <Button size="icon"><LucideMenu class="size-6" /></Button
+      ></DropdownMenuTrigger>
+      <DropdownMenuContent class="mr-3">
+        <DropdownMenuLabel @click="activate = !activate">
+          <span class="flex gap-1.5 items-center">
+            <IconBriefcaseBusiness class="size-3" />
+            Business
+            <IconChevronDown
+              :class="{ 'rotate-180': activate }"
+              class="size-3 ease-in-out duration-300"
+            />
+          </span>
+        </DropdownMenuLabel>
+
+        <DropdownMenuSeparator />
+        <DropdownMenuGroup>
           <div
             :class="{
               'h-0 ': !activate,
@@ -78,18 +89,38 @@
               :key="component.title"
               class="w-full col-span-1"
               :to="component.href"
-              ><Button class="w-full" variant="outline">{{
-                component.title
-              }}</Button></NuxtLink
+            >
+              <DropdownMenuItem>
+                {{ component.title }}
+              </DropdownMenuItem></NuxtLink
             >
           </div>
-        </div>
-      </PopoverContent>
-    </Popover>
+          <DropdownMenuSeparator v-show="activate" />
+        </DropdownMenuGroup>
+
+        <DropdownMenuLabel>
+          <NuxtLink to="/about">
+            <span class="flex gap-1.5 items-center">
+              <IconUsersRound class="size-3" />
+              About Us
+            </span>
+          </NuxtLink>
+        </DropdownMenuLabel>
+        <DropdownMenuSeparator />
+        <DropdownMenuLabel>
+          <NuxtLink to="mailto:info@mechatronic.mitra.co.id">
+            <span class="flex gap-1.5 items-center">
+              <IconContact class="size-3" />
+              Contact Us
+            </span></NuxtLink
+          >
+        </DropdownMenuLabel>
+      </DropdownMenuContent>
+    </DropdownMenu>
   </div>
   <div class="w-full min-h-screen overflow-clip header my-auto pt-6">
     <div
-      class="w-[80%] h-[90%] pt-4 scale-150 image-container mx-auto overflow-clip rounded-3xl relative will-change-transform"
+      class="max-md:w-[80%] w-[95%] h-[90%] pt-4 scale-150 image-container mx-auto overflow-clip rounded-3xl relative will-change-transform"
     >
       <div
         @click="prevImage"
@@ -127,19 +158,36 @@
       <div
         class="flex flex-col gap-14 w-full items-center justify-center z-20 h-full relative text-secondary text-center"
       >
-        <h1 class="text-4xl font-semibold">
+        <h1
+          :class="{
+            'text-white': heroImage[indexImage].color === 'white',
+            'text-black': heroImage[indexImage].color === 'black',
+          }"
+          class="max-md:text-2xl text-4xl font-semibold"
+        >
           Inovasi Mekanikal & Elektrikal <br />
           Tanpa Batas.
         </h1>
         <div
           class="flex flex-col gap-1 justify-center items-center scroller-nav"
         >
-          <span class="text-[8px] text-secondary">Scroll To Continue</span>
+          <span
+            :class="{
+              'text-white': heroImage[indexImage].color === 'white',
+              'text-black': heroImage[indexImage].color === 'black',
+            }"
+            class="text-[8px] text-secondary"
+            >Scroll To Continue</span
+          >
           <IconCaretDown class="size-4 animate-bounce" />
         </div>
       </div>
       <div
-        class="absolute text-header left-[5%] bottom-[5%] text-2xl font-bold z-10 text-white"
+        :class="{
+          'text-white': heroImage[indexImage].color === 'white',
+          'text-black': heroImage[indexImage].color === 'black',
+        }"
+        class="absolute text-header left-[5%] bottom-[5%] text-2xl font-bold z-10"
       >
         Mechatronic Mitra Solusi
       </div>

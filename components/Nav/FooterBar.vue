@@ -1,13 +1,6 @@
 <template>
   <footer class="w-full overflow-hidden">
     <div class="relative h-auto w-full bg-[#051939]">
-      <!-- <div
-        class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"
-      ></div>
-      <div
-        class="absolute left-0 right-0 top-[-10%] h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle_400px_at_50%_300px,#fbfbfb36,#021024)]"
-      ></div> -->
-
       <div class="container relative z-30 py-8 md:py-12">
         <div
           class="w-full flex flex-row max-md:flex-col items-center justify-between gap-24"
@@ -137,7 +130,8 @@
             </h5>
             <div class="flex gap-3 items-center h-full">
               <NuxtLink
-                to=""
+                :to="item.url"
+                target="_blank"
                 v-for="item in socialMedia"
                 :key="item.url"
                 class="p-3 border rounded-full group hover:border-transparent cursor-pointer hover:bg-[#FAD004] ease-in-out duration-300"
@@ -185,7 +179,13 @@
 </template>
 
 <script setup lang="ts">
-import { LucideYoutube, LucideInstagram, LucideMapPin } from "lucide-vue-next";
+import {
+  LucideYoutube,
+  LucideInstagram,
+  LucideMapPin,
+  LucidePhone,
+  LucideMail,
+} from "lucide-vue-next";
 
 const socialMedia = [
   {
@@ -195,6 +195,14 @@ const socialMedia = [
   {
     url: "https://www.youtube.com/",
     icon: LucideYoutube,
+  },
+  {
+    url: "mailto:info@mechatronic.mitra.co.id",
+    icon: LucideMail,
+  },
+  {
+    url: "tel:+628123456789",
+    icon: LucidePhone,
   },
 ];
 </script>

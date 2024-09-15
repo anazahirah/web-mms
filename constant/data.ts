@@ -132,17 +132,21 @@ export const heroImage = [
   {
     image: "/mekanikal.webp",
     alt: "image that representative our mechanical works",
+    color: "white",
   },
   {
     image: "/electrical.webp",
     alt: "image that representative our electrical works",
+    color: "white",
   },
   {
     image: "/konsultan.webp",
     alt: "image that representative our consultation works",
+    color: "black",
   },
   {
     image: "/informatics.webp",
     alt: "image that representative our informatics works",
+    color: "white",
   },
 ];
