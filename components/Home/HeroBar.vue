@@ -51,7 +51,7 @@
         <NavigationMenuItem>
           <NavigationMenuLink
             class="bg-primary text-primary-foreground"
-            href="mailto:info@mechatronic.mitra.co.id"
+            href="mailto:info@mechatronicgroup.com"
             :class="navigationMenuTriggerStyle()"
           >
             Contact Us
@@ -108,7 +108,7 @@
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuLabel>
-          <NuxtLink to="mailto:info@mechatronic.mitra.co.id">
+          <NuxtLink to="mailto:info@mechatronicgroup.com">
             <span class="flex gap-1.5 items-center">
               <IconContact class="size-3" />
               Contact Us

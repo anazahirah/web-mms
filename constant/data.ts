@@ -168,7 +168,7 @@ export const socialMedia = [
     icon: LucideYoutube,
   },
   {
-    url: "mailto:info@mechatronic.mitra.co.id",
+    url: "mailto:info@mechatronicgroup.com",
     icon: LucideMail,
   },
   {
