@@ -2,8 +2,8 @@
   <LazyHomeHeroBar />
   <div class="flex flex-col w-full overflow-clip">
     <LazyHomeMovingText class="max-md:my-6 mb-12 relative" />
-    <LazyHomeWhyUs />
     <LazyHomeServiceBenefit />
+    <LazyHomeWhyUs class="pt-16" />
     <LazyHomeOurBusiness />
     <!-- <LazyProductsSection /> -->
     <LazyHomeClientSection />
