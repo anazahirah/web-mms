@@ -16,7 +16,7 @@
     </div>
 
     <div
-      class="grid max-md:grid-cols-1 max-md:place-items-center grid-cols-4 gap-8 mx-auto w-[90%]"
+      class="max-md:place-items-center flex flex-wrap gap-8 justify-center mx-auto w-[90%]"
     >
       <LazyHomeCardClient
         v-for="logo in client"

@@ -1,7 +1,9 @@
 <template>
   <div class="w-full h-full relative overflow-hidden py-32">
     <div class="grid grid-cols-5 w-[90%] mx-auto gap-24">
-      <div class="flex flex-col gap-1 col-span-2 relative max-md:col-span-6">
+      <div
+        class="flex flex-col gap-1 max-lg:col-span-6 col-span-2 relative max-md:col-span-6"
+      >
         <h2 class="font-semibold text-[clamp(1.5rem,3vw+1rem,3rem)]">
           Our Business
         </h2>
@@ -15,7 +17,7 @@
           class="w-fit"
         />
       </div>
-      <div class="flex flex-col gap-6 col-span-3 relative max-sm:col-span-6">
+      <div class="flex flex-col gap-6 col-span-3 relative max-lg:col-span-6">
         <div class="flex gap-2 max-md:flex-col">
           <div v-for="(item, index) in service" :key="index">
             <div
