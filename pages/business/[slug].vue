@@ -59,7 +59,7 @@
 <script setup lang="ts">
 import { watchOnce } from "@vueuse/core";
 import { type CarouselApi } from "@/components/ui/carousel";
-import { dataCarousel } from "@/composables/dataCarousel";
+import { dataCarousel } from "@/constant/data";
 const route = useRoute();
 const flagData = route.path.split("/")[2];
 
