@@ -1,269 +1,311 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 
-<a id="readme-top"></a>
 
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+
+<div align="center" id="readme-top">
+  <a href="[https://github.com/othneildrew/Best-README-Template](https://github.com/user-attachments/assets/bf95f43f-0cb7-423f-940d-ca261ce8cc9a)">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Web MMS Documentation</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Guide to edit the Web MMS Company Profile
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Go To Website</strong></a>
   </p>
 </div>
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-<!-- ABOUT THE PROJECT -->
-
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-
-- Your time should be focused on creating something amazing. A project that solves a problem and helps others
-- You shouldn't be doing the same tasks over and over like creating a README from scratch
-- You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-- [![Next][Next.js]][Next-url]
-- [![React][React.js]][React-url]
-- [![Vue][Vue.js]][Vue-url]
-- [![Angular][Angular.io]][Angular-url]
-- [![Svelte][Svelte.dev]][Svelte-url]
-- [![Laravel][Laravel.com]][Laravel-url]
-- [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-- [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
 
 ## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Clone The Project
+#### Prerequisite 
 
-This is an example of how to list things you need to use the software and how to install them.
-
-- npm
+You need this pre-requisite package before running the project.
+Bun
   ```sh
-  npm install npm@latest -g
+  # Open Your Powershell in windows and run this command below. make sure pake windows 10 keatas
+  powershell -c "irm bun.sh/install.ps1|iex"
   ```
-
+ untuk memastikan bahwa bun sudah terinstall, jalan kan `bun -v` , dan tampilan yang didapat akan menjadi 
+ ```sh
+# bun -v
+1.1.27
+```
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_Follow this instruction to clone and edit the MMS Web._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = "ENTER YOUR API";
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
+1. Clone the repo
+ ```sh
+git clone https://github.com/anazahirah/web-mms.git
+ ```
+
+Kemudian lakukan Navigasi Kedalam Folder dengan menggunakan kode `cd web-mms` pada terminal
+
+2. Install Bun packages
+```sh
+bun install
+```
+
+3. Run The Project
+```sh
+bun dev
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- USAGE EXAMPLES -->
 
-## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+## Directory Structure
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Struktur directory pada website MMS adalah sebagai berikut : 
+```sh
+| components
+| composables # Ini adalah Directory
+	| useBreadCrumb.ts # Ini adalah File
+| pages
+	| about # Ini Adalah Directory
+		| slug.vue # Ini adalah File
+	| business
+		| slug.vue
+	| client
+		| slug.vue
+	| index.vue
+	
+| content
+	| about
+		| visi.md
+		| misi.md
+	| business
+		| electrical.md
+		| informatika.md
+		| etc.
+	| client
+		| 1.loreal.md
+		| 2.mayora.md
+		| 3.lg.md
+		| etc.
+| public
+	| yamaha.png
+	| lg.png
+	| etc.
+| constant
+	| data.ts 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```
 
-<!-- ROADMAP -->
 
-## Roadmap
+#  Pages
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-  - [ ] Chinese
-  - [ ] Spanish
+  Secara singkat, pages merupakan directory entry point untuk merender halaman yang sudah dibuat.
+-------------------------------------------------------------------------------
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+### pages/index
+   pages/index merupakan halaman utama dalam web MMS ini. didalam pages/index terdapat banyak komponen yang dibuat dan disatukan dalam folder components/Home. 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
+### pages/business
+   pages/business merupakan halaman yang disediakan untuk menghasilkan tampilan mengenai lini bisnis yang ada didalam MMS
 
-## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+### pages/client 
+   pages/client merupakan halaman yang disediakan untuk menghasilkan tampilan mengenai client mana saja yang sudah bekerja samad dengan PT Mechatronica
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+### pages/about 
+   pages/client merupakan halaman yang disediakan untuk menghasilkan tampilan mengenai visi dan misi PT Mechatronica
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
-### Top contributors:
 
-<a href="https://github.com/othneildrew/Best-README-Template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=othneildrew/Best-README-Template" alt="contrib.rocks image" />
-</a>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+# Editing
 
-<!-- LICENSE -->
+ Section ini adalah guideline bagaimana cara untuk melakukan editing terhadap konten pada pages client, about dan business.
+-------------------------------------------------------------------------------
 
-## License
+##### Editing About
+ Buka file pada path tujuan `/content/about/`. didalamnya akan ditemukan 2 file yaitu *misi.md*  dan *visi.md*
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+bentuk markdown pada kedua file tersebut adalah sama, contoh salah satunya terdapat dibawah ini : 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```mdx
+---
 
-<!-- CONTACT -->
+title: "Misi"
 
-## Contact
+description: "Misi Mechatronics"
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+---  
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+# Misi Mechatronics
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+  
 
-<!-- ACKNOWLEDGMENTS -->
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores provident, autem expedita neque sed voluptates voluptatum similique voluptatem fuga ipsum qui odio. Vitae eligendi ullam ratione illum aspernatur quam quo iste id soluta ad ipsum ab rerum, sit fugiat assumenda voluptatem consequuntur, necessitatibus rem et. Illo ea assumenda incidunt maiores.
+```
 
-## Acknowledgments
+Lakukan pengeditan konten dimulai dari `# Misi Mechatronics` kebawah. jangan mengubah meta data yang terdapat diatas, yaitu title dan description.
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+! Hal ini berlaku untuk konten pada *misi* dan juga *visi*
 
-- [Choose an Open Source License](https://choosealicense.com)
-- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-- [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-- [Malven's Grid Cheatsheet](https://grid.malven.co/)
-- [Img Shields](https://shields.io)
-- [GitHub Pages](https://pages.github.com)
-- [Font Awesome](https://fontawesome.com)
-- [React Icons](https://react-icons.github.io/react-icons/search)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+-------------------------------------------------------------
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+##### Editing Client 
+\
+ untuk melakukan editing pada konten client, anda memerlukan 2 tahap, yaitu :
+ 
+ 1. melakukan upload image client pada directory `/public` 
+ 2. menambahkan file pada directory `/content/client`
 
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com
+
+1. Tahap 1 
+	1. Pilih gambar logo client yang ingin dimasukan. pastikan dia memiliki background yang transparant sehingga tidak merusak tampilan
+	2. Convert gambar yang sudah dipilih kedalam format .webp melaui image converter pada internet. anda bisa melakukan convert pada  [link ini](https://www.freeconvert.com/png-to-webp)
+	3. Ubah nama file gambar menjadi nama yang mudah, untuk melakukan standarisasi, ubah nama menjadi *nama logo.webp*. ex : **yamaha.webp**
+	4. Drag and drop image yang sudah diubah nama dan diubah bentuk menjadi webp kedalam folder `/public`
+2. Tahap 2
+	1. Tambahkan file pada directory `/content/client/` dengan format `[urutan].[nama].md`, sebagai contoh : `7.nike.md`. *on notes: angka urutan merupakan incremental(penambahan 1) terhadap urutan terakhir pada folder tersebut. misa: jika file terakhir adalah `7.nike.md` maka file selanjutnya adalah `8.adidas.md`*
+	2. Open file tersebut dan tambahkan konfigurasi berikut kedalam file :
+
+```sh
+---
+
+title: # Ini merupakan nama client, nama client pada bagian ini boleh besar dan di spasi
+
+flag: # ini merupakan bagian navigasi yang diperlukan oleh pages client/[slug].vue untuk menentukan arah navigasi. sehingga isi dari bagian ini harus sama dengan nama file yang baru saja anda buat tanpa urutanya. 
+
+# Example : 
+# File yang baru dibuat adalah :  8.dunkin-donut.md
+# maka isi dari flag adalah : dunkin-donut
+
+image-url: # ini merupakan path untuk merender image yang sudah dimasukan pada tahap 1. isi dari bagian ini adalah nama image yang sudah dimasukan beserta ekstensinya dengan imbuhan / pada depan file.
+
+# Example : 
+# Image yang baru dimasukan : dunkin-donut.webp
+# maka isi dari image-url adalah : /dunkin-donut.webp
+
+
+tahun: # ini merupakan tahun dimana mekatronik bekerja sama dengan client tersebut
+
+layanan: # ini merupakan jenis layanan yang dilakukan mechatronic untuk bekerjasama dengan client tersebut
+
+---
+
+# Bagian Dibawah ini adalah bagian untuk yang dapat diedit untuk isi dari kontent client tersebut.
+
+ Yamaha
+
+  
+
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores provident, autem expedita neque sed voluptates voluptatum similique voluptatem fuga ipsum qui odio. Vitae eligendi ullam ratione illum aspernatur quam quo iste id soluta ad ipsum ab rerum, sit fugiat assumenda voluptatem consequuntur, necessitatibus rem et. Illo ea assumenda incidunt maiores.
+```
+
+
+kemudian , buka file pada path `/constant/data.ts` dan cari dan edit data yang sesuai dengan instrksi dibawah 
+
+```javascript
+export const client = [
+
+{
+
+image: "/lg.png", // ini merupakan image untuk dirender pada halaman utama. masukan gambar sesuai dengan cara yang sama saat mengisi image-url diatas
+
+alt: "Logo LG", // ini merupakan deskripsi jika gambar gagal dimuat, sehingga bagian ini harus deskriptif terhadap apa gambar yang ditampilkan
+
+url: "/client/lg", // ini merupakan alamat navigasi yang diperlukan pada tombol read more pada halaman utama. cara menuliskan nya adalah seperti pada folder /content/client, tetapi imbuhan urutan diganti dengan /client/.
+
+// Example : 
+// Pada /content/client : 8.dunkin-donut.md
+// maka pada url: /client/dunkin-donut
+
+
+
+description:
+
+"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat!", // Ini merupakan deskrisi terhadap client 
+
+},
+
+// ! JIKA INGIN MENAMBAHKAN CLIENT BARU, MAKA COPY DAN PASTE 1 OBJECT DARI YANG DIWAKILI DENGAN 1 {} DAN BERISIKAN IMAGE, ALT, URL DAN DESCRIPTION.
+
+];
+```
+
+##### Editing Business  
+
+ Melakukan edit pada bagian business tidaklah susah , sama seperti hal nya di bagian editing sebelum-sebelumnya, bukalah business yang ingin diedit pada folder `/content/business/bisnis yang ingin dibuka`. kemudian ubahlah pada bagian yang ditunjukan dibawah : 
+
+```
+---
+
+title: "Electrical"
+
+description: "Bisnis Electrical"
+
+flag: "electrical"
+
+---
+
+[UBAH DIBAWAH SINI]
+
+# Electrical
+
+  
+
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores provident, autem expedita neque sed voluptates voluptatum similique voluptatem fuga ipsum qui odio. Vitae eligendi ullam ratione illum aspernatur quam quo iste id soluta ad ipsum ab rerum, sit fugiat assumenda voluptatem consequuntur, necessitatibus rem et. Illo ea assumenda incidunt maiores.
+```
+
+
+kemudian , buka file pada path berikut `/constant/data`, dan carilah variable yang bernamakan dataCarousel dan ubah data sesuai petunjuk dibawah : 
+
+```javascript
+export const dataCarousel = [
+
+{
+flag: "mekanikal", // flag merupakan tanda object ini merupakan bagian dari page mana, pada kasus ini. object ini adalah untuk mekanikal
+url: "/business/mekanikal",
+images: [  
+"https://encrypted-tbn0.gstatic.com/images? q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s", // sehingga images pada object ini merupakan image untuk business mekanikal. dan ini berlaku untuk semua object yang berada pada dataCarousel
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
+],},
+{
+flag: "electrical",
+url: "/business/electrical",
+images: [
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
+],},
+{
+flag: "konsultan",
+url: "/business/konsultan",
+images: [
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
+],},
+{
+flag: "informatika",
+url: "/business/informatika",
+images: [
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
+],},
+];
+```
+
+-------------------------------------------------------------
+
