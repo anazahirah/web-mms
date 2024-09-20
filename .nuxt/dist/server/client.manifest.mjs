@@ -1,1 +1,0 @@
-export { default } from "file:///C:/Users/Terada/web-mms/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
