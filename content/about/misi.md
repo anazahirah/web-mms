@@ -5,4 +5,6 @@ description: "Misi Mechatronics"
 
 # Misi Mechatronics
 
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores provident, autem expedita neque sed voluptates voluptatum similique voluptatem fuga ipsum qui odio. Vitae eligendi ullam ratione illum aspernatur quam quo iste id soluta ad ipsum ab rerum, sit fugiat assumenda voluptatem consequuntur, necessitatibus rem et. Illo ea assumenda incidunt maiores.
+1. Pengadaan suku cadang dan mensupply berdasarkan kebutuhan yang diminta
+2. Melakukan kegiatan-kegiatan konstruksi, maintenance, dan engineering
+3. Menawarkan solusi dan modifikasi tentang masalah-masalah produksi yang diminta mitra usaha
