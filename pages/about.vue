@@ -13,7 +13,7 @@
               <Button variant="secondary" class="w-fit" @click="navigateTo('/')"
                 >Back</Button
               >
-              <LazyNavBreadCrumbNav />
+              <LazyNavBreadCrumbNav variant="secondary" />
               <h1 class="text-white font-semibold text-5xl">
                 About Our Company
               </h1>

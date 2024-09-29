@@ -21,7 +21,7 @@
       class="w-full grid grid-cols-2 items-start justify-center max-w-screen-xl mx-auto max-md:py-10 py-24 max-md:px-8 px-24"
     >
       <div class="flex flex-col gap-6 max-md:col-span-2 col-span-1">
-        <NavBreadCrumbNav class="text-primary" />
+        <NavBreadCrumbNav class="text-primary" variant="primary" />
         <div class="p-8 border border-zinc-100 max-md:w-full w-3/4 rounded-xl">
           <img :src="data?.['image-url']" alt="" />
         </div>

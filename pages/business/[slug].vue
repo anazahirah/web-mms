@@ -57,6 +57,9 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+  layout: "default",
+});
 import { watchOnce } from "@vueuse/core";
 import { type CarouselApi } from "@/components/ui/carousel";
 import { dataCarousel } from "@/constant/data";

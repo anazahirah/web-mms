@@ -2,7 +2,7 @@
   <div class="overflow-clip">
     <NuxtPage />
     <Separator />
-    <LazyFooterBar />
+    <NavFooterBar />
   </div>
 </template>
 
