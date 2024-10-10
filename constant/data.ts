@@ -3,50 +3,58 @@ import {
   LucideInstagram,
   LucidePhone,
   LucideMail,
+  LucideLinkedin,
 } from "lucide-vue-next";
 
 export const client = [
   {
-    image: "/lg.png",
-    alt: "Logo LG",
-    url: "/client/lg",
+    image: "/AP2.webp",
+    alt: "Logo AP2",
+    url: "/client/AP2",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat!",
+      "Badan Usaha Milik Negara yang bergerak dalam bidang usaha pelayanan jasa kebandarudaraan.",
   },
   {
-    image: "/mayora.png",
-    alt: "Logo Mayora",
-    url: "/client/mayora",
+    image: "/APS.webp",
+    alt: "Logo APS",
+    url: "/client/APS",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat!",
+      "Anak perusahaan dari Injourney yang menyediakan layanan manajemen fasilitas untuk bandarudara",
   },
   {
-    image: "/loreal.svg",
-    alt: "Logo Loreal",
-    url: "/client/loreal",
+    image: "/GT.webp",
+    alt: "Logo GT",
+    url: "/client/GT",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat!",
+      "Produsen ban terbesar di Asia Tenggara",
   },
   {
-    image: "/cabot.png",
-    alt: "Logo Cabot",
-    url: "/client/cabot",
+    image: "/IRC.webp",
+    alt: "Logo IRC",
+    url: "/client/GT",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat!",
+      "Manufacturer of polyurethane, rubber, plastics and composites",
+  },
+  {
+    image: "/YKK.webp",
+    alt: "Logo YKK",
+    url: "/client/YKK",
+    description:
+      "Perusahaan manufaktur asal Jepang yang memproduksi ritsleting dan produk pengikat",
   },
   {
     image: "/nestle.png",
     alt: "Logo Nestle",
     url: "/client/nestle",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat!",
+      "the world's largest food & beverage company",
   },
   {
-    image: "/yamaha.png",
-    alt: "Logo Yamaha",
-    url: "/client/yamaha",
+    image: "/rinnai.webp",
+    alt: "Logo Rinnai",
+    url: "/client/rinnai",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat!",
+      "Perusahaan multinasional asal Jepang yang memproduksi peralatan berbahan bakar gas",
   },
 ];
 
@@ -54,37 +62,37 @@ export const service = [
   {
     title: "Engineering Service",
     description:
-      "Solusi lengkap untuk kebutuhan teknik mesin, listrik, pemeliharaan sistem, konsultasi, dan desain segel mekanis.",
-    slogan: "Fast",
+      "Special Purpose Machine (Conveyor, Oven, Xray, Chiller, Heater), Manufacturing Services, Storage & Handling (Tanks, Piping, Trolley), Workstations & Furniture, Machinery Components",
+    slogan: "Mekanikal",
     number: "01",
     image: "/mekanikal.webp",
     url: "/business/mekanikal",
   },
   {
-    title: "Steel Works and Pipe Works",
+    title: "Electric Service",
     description:
-      "Layanan fabrikasi dan pemasangan baja serta instalasi sistem perpipaan",
-    slogan: "Steel and Pipe",
+      "Panel, Automation Systems, Power Plants, Electronic Components",
+    slogan: "Elektrikal",
     number: "02",
     image: "/electrical.webp",
     url: "/business/electrical",
   },
   {
-    title: "Plumbing and Refrigeration",
+    title: "Layanan Ahli",
     description:
-      "Instalasi, perbaikan, dan pemeliharaan sistem pipa air bersih/kotor serta sistem pendingin ruangan/industri.",
-    slogan: " Pipe Protection",
+      "Certification & Compliance Services, Engineering Services, Maintenance & Repair Services",
+    slogan: "Konsultan",
     number: "03",
-    image: "/mekanikal.webp",
+    image: "/konsultan.webp",
     url: "/business/konsultan",
   },
   {
-    title: "Contractor and Supplier",
+    title: "",
     description:
-      "Penyedia jasa konstruksi dan pengadaan material/peralatan untuk berbagai proyek.",
-    slogan: "Construction",
+      "",
+    slogan: "Informatika",
     number: "04",
-    image: "/mekanikal.webp",
+    image: "/informatics.webp",
     url: "/business/informatika",
   },
   // {
@@ -114,24 +122,24 @@ export const components: {
     title: "Mekanikal",
     href: "/business/mekanikal",
     description:
-      "Solusi lengkap untuk kebutuhan teknik mesin, listrik, pemeliharaan sistem, konsultasi, dan desain segel mekanis.",
+      "Special Purpose Machine, Manufacturing Services, Storage & Handling, Workstations & Furniture, Machinery Components"
   },
   {
     title: "Electrical",
     href: "/business/electrical",
     description:
-      "For sighted users to preview content available behind a link.",
+      "Panel, Automation Systems, Power Plants, Electronic Components",
   },
   {
-    title: "Konsultan",
+    title: "Consulting & Service",
     href: "/business/konsultan",
     description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "Certification & Compliance Services, Engineering Services, Maintenance & Repair Services",
   },
   {
     title: "Informatika",
     href: "/business/informatika",
-    description: "Visually or semantically separates content.",
+    description: "",
   },
 ];
 
@@ -160,11 +168,11 @@ export const heroImage = [
 
 export const socialMedia = [
   {
-    url: "https://www.instagram.com/",
-    icon: LucideInstagram,
+    url: "https://id.linkedin.com/company/pt-mechatronic-mitra-solusi",
+    icon: LucideLinkedin,
   },
   {
-    url: "https://www.youtube.com/",
+    url: "https://www.youtube.com/@mechatronicmitrasolusi1780",
     icon: LucideYoutube,
   },
   {
@@ -172,7 +180,7 @@ export const socialMedia = [
     icon: LucideMail,
   },
   {
-    url: "tel:+628123456789",
+    url: "tel:+6287776667129",
     icon: LucidePhone,
   },
 ];
@@ -223,40 +231,39 @@ export const dataCarousel = [
     flag: "mekanikal",
     url: "/business/mekanikal",
     images: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
+      "/M1.webp",
+      "/M2.webp",
+      "/M3.webp",
+      "/M4.webp",
+      "/M5.webp",
+      "/M6.webp",
     ],
   },
   {
     flag: "electrical",
     url: "/business/electrical",
     images: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
+      "/E1.webp",
+      "/E2.webp",
+      "/E3.webp",
+      "/E4.webp",
+      "/E5K3.webp",
     ],
   },
   {
     flag: "konsultan",
     url: "/business/konsultan",
     images: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
+      "/K1.webp",
+      "/K2.webp",
+      "/E5K3.webp",
     ],
   },
   {
     flag: "informatika",
     url: "/business/informatika",
     images: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh3dqVPuePnnCxxKmoztE3wZNQb07uEbBhQ&s",
+      
     ],
   },
 ];

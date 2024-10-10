@@ -16,19 +16,19 @@ const { data } = await useAsyncData("page-data", () =>
 
 <style>
 article h1 {
-  @apply text-neutral-600 text-5xl font-bold pb-4 capitalize;
+  @apply text-[#4A4A4A] text-5xl font-bold pb-4 capitalize;
 }
 
 article h2 {
-  @apply text-white text-3xl font-semibold pb-4 tracking-wide capitalize;
+  @apply text-[#4A4A4A] text-xl font-semibold pb-4 tracking-wide capitalize;
 }
 
 article pre {
-  @apply text-white p-10  bg-card rounded-md  my-10 overflow-auto;
+  @apply text-[#4A4A4A] p-10  bg-card rounded-md  my-10 overflow-auto;
 }
 
 article p {
-  @apply text-[#989899]  pt-2 pb-16 font-normal leading-relaxed;
+  @apply text-[#4A4A4A]  pt-2 pb-4 font-normal leading-relaxed text-justify;
 }
 
 article blockquote {
@@ -36,10 +36,10 @@ article blockquote {
 }
 
 article ol {
-  @apply text-white list-decimal space-y-4 py-6;
+  @apply text-[#4A4A4A] list-decimal space-y-4 py-6;
 }
 
 article ol li {
-  @apply underline underline-offset-1;
+  text-decoration: none;
 }
 </style>

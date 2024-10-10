@@ -8,9 +8,7 @@
       </h4>
       <p class="text-neutral-800 text-lg text-center max-w-4xl">
         We proudly partner with a diverse range of clients, from industry giants
-        to innovative startups across sectors. These organizations trust us to
-        deliver exceptional results, thanks to our commitment to excellence and
-        personalized service. We're honored to be their chosen partner in
+        to innovative startups across sectors. Here are some of the companies that trust us to deliver outstanding results, thanks to our commitment to excellence and personalized service. We're honored to be their chosen partner in
         achieving their goals
       </p>
     </div>
